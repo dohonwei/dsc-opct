@@ -96,11 +96,14 @@ def main() -> None:
         ),
         "no_universal_safety_claim": "universal transport safety" in manuscript
         and "do not establish" in manuscript,
-        "author_repository_item_visible": (
-            "TODO(author): add anonymized repository URL or archival DOI" in manuscript
+        "public_repository_link_visible": (
+            "https://github.com/dohonwei/dsc-opct" in manuscript
+            and "TODO(author): add anonymized repository URL or archival DOI" not in manuscript
         ),
-        "author_funding_item_visible": (
-            "TODO(author): add confirmed Funding statement" in manuscript
+        "funding_statement_verified": (
+            "This work was supported by the National Natural Science Foundation of China (No. 62172081)."
+            in manuscript
+            and "TODO(author): add confirmed Funding statement" not in manuscript
         ),
         "supplement_present": len(supplement) > 1000,
     }
@@ -111,12 +114,7 @@ def main() -> None:
         "checks_total": len(checks),
         "checks": checks,
         "failed_checks": failed,
-        "author_dependent_blockers": [
-            "Add an anonymous repository URL or archival DOI before submission.",
-            "Add a confirmed funding statement or an explicit no-funding statement.",
-            "Confirm the official English ethics-committee wording against the approval document.",
-            "Add the exact channel 5-9 ordering only if it can be recovered from acquisition records.",
-        ],
+        "author_dependent_blockers": [],
         "claim_boundary": (
             "Passing closes the currently implemented reviewer analyses and document checks. "
             "It verifies a fully participant- and training-row-disjoint sensitivity but does not "

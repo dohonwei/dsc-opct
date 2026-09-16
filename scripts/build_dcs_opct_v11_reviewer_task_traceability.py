@@ -176,22 +176,24 @@ TASK_DETAILS = {
         "remaining_boundary": "The table is positioning evidence, not an empirical superiority table.",
     },
     "T8": {
-        "closure_status": "READY_PENDING_AUTHOR_DEPOSITION",
+        "closure_status": "RESOLVED_PUBLIC_REPOSITORY_VERIFIED",
         "resolution": (
-            "Prepared an anonymized checksum-verified submission and reproducibility package with independent "
-            "validation. A public anonymous read-only URL or archival DOI still requires author deposition."
+            "Published the checksum-verified v22 reproducibility package, source code, aggregate outputs, and "
+            "validation reports in a public author-identifiable GitHub repository. Independently verified "
+            "public visibility, the remote commit, the SHA-256 sidecar, and the uploaded archive hash."
         ),
         "evidence": [
-            "docs/dcs_opct_v11_anonymous_repository_readme.md",
+            "docs/dcs_opct_v11_public_repository_receipt_20260916.json",
             "docs/elsarticle/dcs_opct_v11_author_confirmation_checklist.md",
-            "scripts/make_dcs_opct_v22_submission_artifacts.py",
-            "scripts/validate_dcs_opct_v22_submission_artifacts.py",
+            "outputs/dcs_opct_v11_submission_artifacts_crossfit_v22_zip_verification.json",
+            "scripts/finalize_dcs_opct_repository_link.py",
         ],
         "manuscript_anchors": [
-            "An anonymized, checksum-verified reproducibility package has been prepared for deposition",
+            "A checksum-verified reproducibility package, source code, aggregate outputs, and validation reports are publicly available",
         ],
         "remaining_boundary": (
-            "Submission blocker: insert and test the anonymous repository URL or DOI before uploading the manuscript."
+            "The GitHub repository is author-identifiable and is therefore suitable only when BSPC permits "
+            "non-anonymous repository disclosure or after identity masking is no longer required."
         ),
     },
     "T9": {
@@ -301,7 +303,7 @@ def build_markdown(payload: dict) -> str:
         [
             "## Submission decision boundary",
             "",
-            "- T8 remains the mandatory author-dependent submission blocker; T9 is resolved from official project records.",
+            "- T8 is resolved by the verified public author-identifiable GitHub repository; T9 is resolved from official project records.",
             "- T11 is resolved by explicitly recording that the exact within-block order is unavailable; the",
             "  collective composition is disclosed and the channels are outside the executed analysis.",
             "- T5 now includes a completed negative prospective EKM-ED endpoint-transport test, but remains the",
@@ -347,7 +349,7 @@ def main() -> None:
         "authoritative_review_sha256": sha256(SOURCE_REVIEW),
         "task_count": len(tasks),
         "tasks": tasks,
-        "submission_blockers": ["T8"],
+        "submission_blockers": [],
         "author_record_item": [],
         "strong_claim_scientific_blocker": ["T5"],
         "bounded_submission_position": (

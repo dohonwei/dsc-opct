@@ -1,0 +1,20 @@
+
+\begin{table*}[t]
+\centering
+\caption{Descriptive dual-unseen category-polarity performance at zero identity dose. Mean $\pm$ SD summarizes five correlated frozen split seeds and is not an independent-sample confidence interval.}
+\label{tab:eegemotions27-dual-generalization}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+Representation & Classifier & Seeds & Balanced accuracy & Range & Mean $-0.5$ \\
+\midrule
+All features & Logistic & 5 & 0.450 $\pm$ 0.051 & 0.365--0.493 & -0.050 \\
+All features & GPU MLP & 5 & 0.422 $\pm$ 0.081 & 0.289--0.495 & -0.078 \\
+Relative power & Logistic & 5 & 0.473 $\pm$ 0.042 & 0.398--0.499 & -0.027 \\
+Relative power & GPU MLP & 5 & 0.413 $\pm$ 0.063 & 0.312--0.471 & -0.087 \\
+Normalized asymmetry & Logistic & 5 & 0.458 $\pm$ 0.030 & 0.406--0.475 & -0.042 \\
+Normalized asymmetry & GPU MLP & 5 & 0.400 $\pm$ 0.070 & 0.283--0.459 & -0.100 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

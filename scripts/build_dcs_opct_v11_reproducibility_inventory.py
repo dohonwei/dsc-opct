@@ -17,6 +17,20 @@ FREEZE = ROOT / "docs/distribution_covered_stratified_opct_v11_final_freeze.json
 EXPECTED_FREEZE_HASH = "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee"
 
 FIXED_EVIDENCE = {
+    "public_repository_finalization": [
+        "docs/dcs_opct_v11_public_repository_readme.md",
+        "docs/dcs_opct_v11_public_repository_receipt_20260916.json",
+        "docs/dcs_opct_v11_reviewer_task_traceability_20260916.md",
+        "docs/elsarticle/dcs_opct_v11_author_confirmation_checklist.md",
+        "scripts/finalize_dcs_opct_repository_link.py",
+        "scripts/build_dcs_opct_v11_reviewer_task_traceability.py",
+        "scripts/validate_dcs_opct_v11_reviewer_task_traceability.py",
+        "scripts/make_dcs_opct_v23_submission_artifacts.py",
+        "scripts/validate_dcs_opct_v23_submission_artifacts.py",
+        "outputs/dcs_opct_v11_reviewer_task_traceability_20260916/reviewer_task_traceability.json",
+        "outputs/dcs_opct_v11_reviewer_task_traceability_20260916/independent_validation_report.json",
+        "outputs/dcs_opct_v11_submission_artifacts_crossfit_v22_zip_verification.json",
+    ],
     "reproducibility_driver": [
         "scripts/validate_dcs_opct_v11_release_readiness.py",
         "scripts/build_dcs_opct_v11_reproducibility_inventory.py",

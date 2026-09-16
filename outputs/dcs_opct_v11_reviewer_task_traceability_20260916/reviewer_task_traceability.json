@@ -1,6 +1,6 @@
 {
   "schema_version": "dcs-opct-v11-reviewer-task-traceability-v1",
-  "generated_at_utc": "2026-09-16T11:48:03.372436+00:00",
+  "generated_at_utc": "2026-09-16T12:52:47.899603+00:00",
   "as_of_date": "2026-09-16",
   "authoritative_review_source": "tmp/nature_review_studio/review_dcs_opct_v11_bspc_20260914.json",
   "authoritative_review_sha256": "9511e2b51210074106f9150c0d189b8bd1de509e3317afb5bff8d885f750bccc",
@@ -166,18 +166,18 @@
       "source_strategy": "发布版本化匿名复现包",
       "source_status": "TODO_AUTHOR_CONFIRM",
       "source_blocks_response": "Yes",
-      "closure_status": "READY_PENDING_AUTHOR_DEPOSITION",
-      "resolution": "Prepared an anonymized checksum-verified submission and reproducibility package with independent validation. A public anonymous read-only URL or archival DOI still requires author deposition.",
+      "closure_status": "RESOLVED_PUBLIC_REPOSITORY_VERIFIED",
+      "resolution": "Published the checksum-verified v22 reproducibility package, source code, aggregate outputs, and validation reports in a public author-identifiable GitHub repository. Independently verified public visibility, the remote commit, the SHA-256 sidecar, and the uploaded archive hash.",
       "evidence": [
-        "docs/dcs_opct_v11_anonymous_repository_readme.md",
+        "docs/dcs_opct_v11_public_repository_receipt_20260916.json",
         "docs/elsarticle/dcs_opct_v11_author_confirmation_checklist.md",
-        "scripts/make_dcs_opct_v22_submission_artifacts.py",
-        "scripts/validate_dcs_opct_v22_submission_artifacts.py"
+        "outputs/dcs_opct_v11_submission_artifacts_crossfit_v22_zip_verification.json",
+        "scripts/finalize_dcs_opct_repository_link.py"
       ],
       "manuscript_anchors": [
-        "An anonymized, checksum-verified reproducibility package has been prepared for deposition"
+        "A checksum-verified reproducibility package, source code, aggregate outputs, and validation reports are publicly available"
       ],
-      "remaining_boundary": "Submission blocker: insert and test the anonymous repository URL or DOI before uploading the manuscript."
+      "remaining_boundary": "The GitHub repository is author-identifiable and is therefore suitable only when BSPC permits non-anonymous repository disclosure or after identity masking is no longer required."
     },
     {
       "id": "T9",
@@ -242,9 +242,7 @@
       "remaining_boundary": "The exact within-block order is unavailable in the inspected acquisition and analysis records. This is explicitly disclosed and does not affect the executed FP1/FP2 analysis."
     }
   ],
-  "submission_blockers": [
-    "T8"
-  ],
+  "submission_blockers": [],
   "author_record_item": [],
   "strong_claim_scientific_blocker": [
     "T5"

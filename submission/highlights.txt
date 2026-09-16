@@ -1,0 +1,5 @@
+Counterfactual identity dose separates opportunity, encoding, and utilization.
+Identity exposure can reverse model ranking under joint-unseen deployment.
+A mechanism-derived audit-risk score transfers ranking but may lose calibration.
+DCS-OPCT preserves ordering and releases only after a stratified audit certificate.
+Stronger data separation contracts release and triggers fail-closed non-intervention.

@@ -1,5 +1,19 @@
 # DCS-OPCT v11 manuscript revision log
 
+## 2026-09-16: public repository deposition and v23 finalization
+
+- Published the validated v22 reproducibility package, browseable source code,
+  aggregate evidence, and validation reports at
+  `https://github.com/dohonwei/dsc-opct`.
+- Verified public repository metadata, the remote main-branch commit, the
+  SHA-256 sidecar, and the exact uploaded local archive hash; recorded the
+  evidence and the interrupted second-download attempt without overstating it.
+- Replaced the anonymous-deposition placeholder in Data and code availability
+  with the public author-identifiable repository URL.
+- Closed reviewer task T8, removed the final author-dependent submission
+  blocker, and prepared v23 packaging and validation without changing the
+  frozen method, experimental outputs, or claim boundary.
+
 ## 2026-09-16: v22 submission-chain consistency audit
 
 - Updated the author confirmation checklist from the obsolete v19 package reference to the immutable v22 archive workflow.

@@ -23,7 +23,7 @@ EXPECTED_STATUS = {
     "T5": "PARTIALLY_RESOLVED_PROSPECTIVE_ATTEMPT_STRUCTURALLY_INELIGIBLE",
     "T6": "RESOLVED",
     "T7": "RESOLVED",
-    "T8": "READY_PENDING_AUTHOR_DEPOSITION",
+    "T8": "RESOLVED_PUBLIC_REPOSITORY_VERIFIED",
     "T9": "RESOLVED_FROM_OFFICIAL_PROJECT_RECORDS",
     "T10": "RESOLVED",
     "T11": "RESOLVED_UNAVAILABLE_TRANSPARENTLY_DISCLOSED",
@@ -115,7 +115,7 @@ def main() -> None:
 
     record(
         "submission_blockers_exact",
-        payload.get("submission_blockers") == ["T8"],
+        payload.get("submission_blockers") == [],
         payload.get("submission_blockers"),
     )
     record(

@@ -33,6 +33,7 @@ STACK_EXPECTED_TESTS = {"AMIGOS": 13, "Emognition": 15}
 EXPECTED_FREEZE_HASH = "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee"
 EXPECTED_SCHEMA = "dcs-opct-v11-reproducibility-inventory-1.0"
 REQUIRED_GROUPS = {
+    "public_repository_finalization",
     "reproducibility_driver",
     "access_and_readiness",
     "prospective_external_software",
@@ -49,6 +50,18 @@ REQUIRED_GROUPS = {
     "frozen_core_evidence",
 }
 EXPECTED_FIXED_PATH_GROUPS = {
+    "docs/dcs_opct_v11_public_repository_readme.md": "public_repository_finalization",
+    "docs/dcs_opct_v11_public_repository_receipt_20260916.json": "public_repository_finalization",
+    "docs/dcs_opct_v11_reviewer_task_traceability_20260916.md": "public_repository_finalization",
+    "docs/elsarticle/dcs_opct_v11_author_confirmation_checklist.md": "public_repository_finalization",
+    "scripts/finalize_dcs_opct_repository_link.py": "public_repository_finalization",
+    "scripts/build_dcs_opct_v11_reviewer_task_traceability.py": "public_repository_finalization",
+    "scripts/validate_dcs_opct_v11_reviewer_task_traceability.py": "public_repository_finalization",
+    "scripts/make_dcs_opct_v23_submission_artifacts.py": "public_repository_finalization",
+    "scripts/validate_dcs_opct_v23_submission_artifacts.py": "public_repository_finalization",
+    "outputs/dcs_opct_v11_reviewer_task_traceability_20260916/reviewer_task_traceability.json": "public_repository_finalization",
+    "outputs/dcs_opct_v11_reviewer_task_traceability_20260916/independent_validation_report.json": "public_repository_finalization",
+    "outputs/dcs_opct_v11_submission_artifacts_crossfit_v22_zip_verification.json": "public_repository_finalization",
     "scripts/validate_dcs_opct_v11_release_readiness.py": "reproducibility_driver",
     "scripts/build_dcs_opct_v11_reproducibility_inventory.py": "reproducibility_driver",
     "scripts/validate_dcs_opct_v11_reproducibility_inventory.py": "reproducibility_driver",

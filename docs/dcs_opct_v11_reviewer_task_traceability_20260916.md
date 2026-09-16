@@ -16,7 +16,7 @@ counted as positive calibration effectiveness.
 | T5 | n_domain=2 且七域 gate 失败 | `PARTIALLY_RESOLVED_PROSPECTIVE_ATTEMPT_STRUCTURALLY_INELIGIBLE` | Narrowed every central claim to retrospective selective calibration within evaluated development support and reported the failed seven-domain gate. Completed a checksum-verified, schema-bound, implementation-locked EKM-ED prospective attempt without post-access retuning. The frozen key-moment endpoint yielded zero eligible participants in both tasks and stopped before model fitting. AMIGOS and Emognition remain reserved, and no compatible dataset has produced a positive non-identity external release. Boundary: Scientific blocker for any prospective external-effectiveness or universal-safety claim. It does not prevent submission of the explicitly bounded retrospective paper. |
 | T6 | Figure 1 未显示 source/target/audit/held-out 信息流 | `RESOLVED` | Revised the framework figure and caption to distinguish source, target, audit, held-out, transductive, inductive, raw-group, and raw-partition-first information boundaries. Boundary: None beyond the claim limits already shown in the figure caption. |
 | T7 | Table 1 二元能力判断过于自定义 | `RESOLVED` | Reframed Table 1 as a neutral resource and decision-level matrix reporting each method family's prediction object, target information, assumptions, and present-study implementation status. Boundary: The table is positioning evidence, not an empirical superiority table. |
-| T8 | 无匿名复现仓库或 DOI | `READY_PENDING_AUTHOR_DEPOSITION` | Prepared an anonymized checksum-verified submission and reproducibility package with independent validation. A public anonymous read-only URL or archival DOI still requires author deposition. Boundary: Submission blocker: insert and test the anonymous repository URL or DOI before uploading the manuscript. |
+| T8 | 无匿名复现仓库或 DOI | `RESOLVED_PUBLIC_REPOSITORY_VERIFIED` | Published the checksum-verified v22 reproducibility package, source code, aggregate outputs, and validation reports in a public author-identifiable GitHub repository. Independently verified public visibility, the remote commit, the SHA-256 sidecar, and the uploaded archive hash. Boundary: The GitHub repository is author-identifiable and is therefore suitable only when BSPC permits non-anonymous repository disclosure or after identity masking is no longer required. |
 | T9 | Funding 声明缺失 | `RESOLVED_FROM_OFFICIAL_PROJECT_RECORDS` | Official project plan and approval records identify National Natural Science Foundation of China project No. 62172081; the same EPPVR study also acknowledges that project. A bounded Funding section was added without importing unrelated grants from the prior paper. Boundary: Only grant No. 62172081 is included; two Guangxi grants from the prior paper were excluded because their contribution to the present study was not established. |
 | T10 | 局部结果措辞和摘要仍可压缩 | `RESOLVED` | Standardized outcome-held-out and transductive/inductive terminology, compressed comparator detail in the abstract, moved repeated diagnostics to the supplement, and aligned manuscript, highlights, and cover letter claim boundaries. Boundary: Further compression is editorial rather than a missing analysis. |
 | T11 | Channels 5–9 缺精确索引 | `RESOLVED_UNAVAILABLE_TRANSPARENTLY_DISCLOSED` | Reported the verified collective composition of channels 5--9 and explicitly declined to guess their within-block index order. These channels are not used in the present analysis. Boundary: The exact within-block order is unavailable in the inspected acquisition and analysis records. This is explicitly disclosed and does not affect the executed FP1/FP2 analysis. |
@@ -141,20 +141,20 @@ counted as positive calibration effectiveness.
 - `Neutral resource and decision-level positioning of DCS-OPCT relative to neighboring method families.`
 - `Rows describe primary formulations rather than every possible extension`
 
-### T8: READY_PENDING_AUTHOR_DEPOSITION
+### T8: RESOLVED_PUBLIC_REPOSITORY_VERIFIED
 
 **Reviewer strategy:** 发布版本化匿名复现包
 
 **Evidence files:**
 
-- `docs/dcs_opct_v11_anonymous_repository_readme.md`
+- `docs/dcs_opct_v11_public_repository_receipt_20260916.json`
 - `docs/elsarticle/dcs_opct_v11_author_confirmation_checklist.md`
-- `scripts/make_dcs_opct_v22_submission_artifacts.py`
-- `scripts/validate_dcs_opct_v22_submission_artifacts.py`
+- `outputs/dcs_opct_v11_submission_artifacts_crossfit_v22_zip_verification.json`
+- `scripts/finalize_dcs_opct_repository_link.py`
 
 **Manuscript anchors:**
 
-- `An anonymized, checksum-verified reproducibility package has been prepared for deposition`
+- `A checksum-verified reproducibility package, source code, aggregate outputs, and validation reports are publicly available`
 
 ### T9: RESOLVED_FROM_OFFICIAL_PROJECT_RECORDS
 
@@ -205,7 +205,7 @@ counted as positive calibration effectiveness.
 
 ## Submission decision boundary
 
-- T8 remains the mandatory author-dependent submission blocker; T9 is resolved from official project records.
+- T8 is resolved by the verified public author-identifiable GitHub repository; T9 is resolved from official project records.
 - T11 is resolved by explicitly recording that the exact within-block order is unavailable; the
   collective composition is disclosed and the channels are outside the executed analysis.
 - T5 now includes a completed negative prospective EKM-ED endpoint-transport test, but remains the

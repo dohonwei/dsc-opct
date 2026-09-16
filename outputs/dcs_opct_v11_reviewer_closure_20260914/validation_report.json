@@ -14,16 +14,11 @@
     "endpoint_uncertainty_explicit": true,
     "nearest_neighbor_boundary_explicit": true,
     "no_universal_safety_claim": true,
-    "author_repository_item_visible": true,
-    "author_funding_item_visible": true,
+    "public_repository_link_visible": true,
+    "funding_statement_verified": true,
     "supplement_present": true
   },
   "failed_checks": [],
-  "author_dependent_blockers": [
-    "Add an anonymous repository URL or archival DOI before submission.",
-    "Add a confirmed funding statement or an explicit no-funding statement.",
-    "Confirm the official English ethics-committee wording against the approval document.",
-    "Add the exact channel 5-9 ordering only if it can be recovered from acquisition records."
-  ],
+  "author_dependent_blockers": [],
   "claim_boundary": "Passing closes the currently implemented reviewer analyses and document checks. It verifies a fully participant- and training-row-disjoint sensitivity but does not establish a positive fully training-data-independent release, prospective external effectiveness, or universal non-harm."
 }

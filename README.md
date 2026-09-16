@@ -12,15 +12,15 @@ DCS-OPCT calibrates a configuration-level audit-risk probability. It does not al
 
 ## Validated submission archive
 
-The locally validated release archive is `dcs_opct_v11_submission_artifacts_crossfit_v22.zip`.
+The current validated release archive is `dcs_opct_v11_submission_artifacts_crossfit_v23.zip`. The v22 archive remains available as an immutable publication-deposition predecessor.
 
 SHA-256:
 
 ```text
-442BFB517EA8DD88E0693080780946EF9A321AFC66CE8F756DE4243A6E19AC66
+6BFC1056063B446A7FB0FA89A9506F5F66368EC6EF8FFE4835673B5BCC13DB30
 ```
 
-The archive-level verification covered 538/538 entries with no CRC failure or manifest mismatch. The embedded submission-package validation passed 26/26 checks, the T1–T11 traceability validation passed 16/16 checks, and the EKM-ED confirmatory structural-failure validation passed 19/19 checks.
+The v23 archive-level verification covered 543/543 entries with no CRC failure or manifest mismatch. The embedded submission-package validation passed 28/28 checks, the T1–T11 traceability validation passed 16/16 checks with no author-dependent submission blocker, and the EKM-ED confirmatory structural-failure validation passed 19/19 checks.
 
 ## Claim boundary
 
@@ -33,4 +33,4 @@ The evidence supports retrospective selective configuration-level audit-risk cal
 - Dependencies in `requirements.txt` and `requirements-experiment-lock.txt`
 - LaTeX with `latexmk`, `pdflatex`, and BibTeX for manuscript compilation
 
-See `docs/dcs_opct_v11_anonymous_repository_readme.md` for the full validation commands and data-governance boundaries. The filename is retained to match the immutable v22 archive manifest; its "anonymous" label describes the prepared review package rather than this public GitHub mirror.
+See `docs/dcs_opct_v11_public_repository_readme.md` for the current validation commands and data-governance boundaries. The historical anonymized-package filename is retained only for compatibility with the immutable v22 manifest.

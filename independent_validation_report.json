@@ -1,14 +1,14 @@
 {
   "status": "passed",
-  "generated_at_utc": "2026-09-16T11:50:11.204996+00:00",
-  "manifest_sha256": "dabdb3f4f374909b57ffdf5fd3a20f6254afd4fced7cb70b7ddd783eb1c8891d",
-  "checks_passed": 26,
-  "checks_total": 26,
+  "generated_at_utc": "2026-09-16T12:54:01.775007+00:00",
+  "manifest_sha256": "cd920a6e49ffb9239838ce9966ec7d6c00ccb387db95b66d814121fd220c0229",
+  "checks_passed": 28,
+  "checks_total": 28,
   "checks": [
     {
       "name": "schema_version",
       "passed": true,
-      "detail": "dcs-opct-v11-bspc-submission-package-v22"
+      "detail": "dcs-opct-v11-bspc-submission-package-v23"
     },
     {
       "name": "freeze_hash",
@@ -23,7 +23,7 @@
     {
       "name": "declared_file_count",
       "passed": true,
-      "detail": 536
+      "detail": 541
     },
     {
       "name": "all_source_hashes_current",
@@ -33,12 +33,12 @@
     {
       "name": "main_pdf_valid_and_fresh",
       "passed": true,
-      "detail": 1789557707.4191575
+      "detail": 1789563101.0
     },
     {
       "name": "supp_pdf_valid_and_fresh",
       "passed": true,
-      "detail": 1789558179.533604
+      "detail": 1789562838.0
     },
     {
       "name": "latex_logs_clean",
@@ -140,6 +140,41 @@
       "detail": "no Funding TODO"
     },
     {
+      "name": "public_repository_link_verified",
+      "passed": true,
+      "detail": "https://github.com/dohonwei/dsc-opct"
+    },
+    {
+      "name": "public_repository_receipt_verified",
+      "passed": true,
+      "detail": {
+        "status": "verified_public_repository",
+        "verified_at_local": "2026-09-16",
+        "repository_url": "https://github.com/dohonwei/dsc-opct",
+        "visibility": "public",
+        "anonymity": "author-identifiable; not an anonymous review repository",
+        "default_branch": "main",
+        "verified_head_commit": "b44cd63c86e9a9afb8f2316de16d2fdb48b97fd5",
+        "package_commit": "9c9cd14c619aec237e57fabb5389a41c491aa21f",
+        "package_path": "dcs_opct_v11_submission_artifacts_crossfit_v22.zip",
+        "package_bytes": 13686425,
+        "package_sha256": "442BFB517EA8DD88E0693080780946EF9A321AFC66CE8F756DE4243A6E19AC66",
+        "sidecar_path": "dcs_opct_v11_submission_artifacts_crossfit_v22.zip.sha256",
+        "archive_entries": 538,
+        "archive_crc_failures": 0,
+        "manifest_hash_mismatches": 0,
+        "verification_evidence": [
+          "GitHub repository metadata independently returned public visibility and main as the default branch",
+          "GitHub commit retrieval independently resolved the package commit and the later README clarification commit",
+          "GitHub file retrieval independently returned the expected SHA-256 sidecar from main",
+          "local origin/main resolved to the verified head commit after push",
+          "the exact uploaded local archive matched the sidecar SHA-256 before and after commit"
+        ],
+        "network_note": "A second full raw-download attempt from the local host was interrupted by an unstable GitHub transport connection; repository visibility, commit reachability, sidecar content, pushed blob identity, and local archive integrity were independently verified. No claim of a completed second binary download is made.",
+        "data_governance": "The public repository excludes restricted raw EEG files and the designated participant-level governance-sensitive outputs."
+      }
+    },
+    {
       "name": "sensitive_outputs_excluded",
       "passed": true,
       "detail": [
@@ -161,9 +196,7 @@
     {
       "name": "author_blockers_exact",
       "passed": true,
-      "detail": [
-        "Insert an anonymous read-only repository URL or archival DOI in the manuscript."
-      ]
+      "detail": []
     },
     {
       "name": "submission_attachments_complete",
@@ -171,9 +204,7 @@
       "detail": []
     }
   ],
-  "author_dependent_blockers": [
-    "Insert an anonymous read-only repository URL or archival DOI in the manuscript."
-  ],
+  "author_dependent_blockers": [],
   "external_scientific_blocker": "The prospectively reserved EKM-ED attempt failed structural endpoint eligibility before model fitting, and no compatible external dataset has passed all frozen gates and produced a non-identity release. This package therefore does not claim prospective external effectiveness, future-domain non-harm, or universal safety.",
   "claim_boundary": "The package supports retrospective selective configuration-level audit-risk calibration within evaluated development support and verifies fail-closed execution, including a prospective endpoint-transport failure. It does not establish positive fully training-data-independent calibration, prospective external effectiveness, future-domain non-harm, or direct improvement of EEG emotion predictions."
 }
