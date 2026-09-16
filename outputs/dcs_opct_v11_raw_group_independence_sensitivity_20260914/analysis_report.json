@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "generated_at_utc": "2026-09-14T14:24:05.220562+00:00",
+  "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "bootstrap_repetitions": 5000,
+  "claim_boundary": "Audit and evaluation endpoints use disjoint raw test participants and, where verified, disjoint physical stimuli. Emotion-model training rows and split-seed fits can still be shared."
+}

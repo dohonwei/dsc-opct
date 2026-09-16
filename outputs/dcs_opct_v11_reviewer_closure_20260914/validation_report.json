@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checks_passed": 14,
+  "checks_total": 14,
+  "checks": {
+    "all_component_validators_pass": true,
+    "expected_component_check_counts": true,
+    "main_latex_log_clean": true,
+    "supplement_latex_log_clean": true,
+    "framework_figure_in_latest_pdf": true,
+    "independence_figure_in_latest_pdf": true,
+    "transductive_boundary_explicit": true,
+    "raw_partition_boundary_explicit": true,
+    "endpoint_uncertainty_explicit": true,
+    "nearest_neighbor_boundary_explicit": true,
+    "no_universal_safety_claim": true,
+    "author_repository_item_visible": true,
+    "author_funding_item_visible": true,
+    "supplement_present": true
+  },
+  "failed_checks": [],
+  "author_dependent_blockers": [
+    "Add an anonymous repository URL or archival DOI before submission.",
+    "Add a confirmed funding statement or an explicit no-funding statement.",
+    "Confirm the official English ethics-committee wording against the approval document.",
+    "Add the exact channel 5-9 ordering only if it can be recovered from acquisition records."
+  ],
+  "claim_boundary": "Passing closes the currently implemented reviewer analyses and document checks. It verifies a fully participant- and training-row-disjoint sensitivity but does not establish a positive fully training-data-independent release, prospective external effectiveness, or universal non-harm."
+}

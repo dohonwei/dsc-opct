@@ -1,0 +1,20 @@
+{
+  "receipt_id": "ekmed-public-key-moments-20260916",
+  "retrieved_at_local": "2026-09-16T18:33:25+08:00",
+  "source": {
+    "record": "doi:10.5281/zenodo.8431451",
+    "url": "https://zenodo.org/records/8431451",
+    "source_type": "official public Zenodo record description",
+    "access_scope": "public record text only; no archive member or participant value was opened"
+  },
+  "time_basis": "seconds from the start of each affective film",
+  "registered_key_moments_seconds": {
+    "ANGER": [83, 158, 216],
+    "SADNESS": [133, 180, 228],
+    "HAPPINESS": [102, 179, 230],
+    "FEAR": [105, 180, 239]
+  },
+  "window_rule": "extract a complete four-second window centered on each registered key moment",
+  "baseline_policy": "the baseline film is excluded from the primary endpoint",
+  "claim_boundary": "This receipt records public stimulus-level timing metadata only. It supplies no participant identifier, questionnaire response, EEG sample, derived feature, endpoint, effectiveness, non-harm, replication, or safety evidence."
+}

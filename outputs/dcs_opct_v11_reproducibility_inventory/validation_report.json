@@ -1,0 +1,193 @@
+{
+  "status": "passed",
+  "generated_at_utc": "2026-09-16T08:42:49.007987+00:00",
+  "claim_boundary": "Inventory integrity establishes traceability and reproducibility of recorded artifacts only. It is not prospective external effectiveness, non-harm, or universal safety evidence.",
+  "inventory_sha256": "60a1c0fb66856b84f7632fadc91be5c34715482f16889a417fc2459042b4af04",
+  "checks_passed": 23,
+  "checks_total": 23,
+  "checks": [
+    {
+      "name": "schema_version",
+      "passed": true,
+      "detail": "dcs-opct-v11-reproducibility-inventory-1.0"
+    },
+    {
+      "name": "unique_paths",
+      "passed": true,
+      "detail": 252
+    },
+    {
+      "name": "declared_file_count",
+      "passed": true,
+      "detail": 252
+    },
+    {
+      "name": "required_groups_present",
+      "passed": true,
+      "detail": [
+        "access_and_readiness",
+        "cluster_dependence_audit_yield",
+        "cluster_score_aggregation_sensitivity",
+        "component_diagnostic",
+        "evidence_integration_preview_v2",
+        "external_access_sidecar",
+        "frozen_core_evidence",
+        "higher_level_dependence_and_preview_v4",
+        "latest_submission_package",
+        "manuscript",
+        "nature_review_and_preview_v3",
+        "prospective_external_software",
+        "reproducibility_driver",
+        "reviewer_closure_20260914",
+        "submission_package"
+      ]
+    },
+    {
+      "name": "no_self_or_report_hash",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_inventory_hashes_match",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "freeze_hash_unchanged",
+      "passed": true,
+      "detail": "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee"
+    },
+    {
+      "name": "all_fixed_evidence_included",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "fixed_evidence_groups_correct",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "all_frozen_artifacts_included",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "frozen_artifact_hashes_match_freeze",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "release_readiness_passed",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "checks": {
+          "all_commands_passed": true,
+          "freeze_hash_unchanged": true,
+          "cuda_available": true,
+          "both_preaccess_stacks_current": true,
+          "dataset_availability_matrix_present": true,
+          "external_arrival_detector_fail_closed": true
+        }
+      }
+    },
+    {
+      "name": "amigos_preaccess_stack_passed",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "test_groups": 13
+      }
+    },
+    {
+      "name": "emognition_preaccess_stack_passed",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "test_groups": 15
+      }
+    },
+    {
+      "name": "submission_package_validated",
+      "passed": true,
+      "detail": {
+        "manifest_status": "submission_artifacts_generated_and_validated",
+        "validation": [
+          78,
+          78
+        ]
+      }
+    },
+    {
+      "name": "latest_submission_package_validated",
+      "passed": true,
+      "detail": {
+        "validation": [
+          21,
+          21
+        ],
+        "freeze": "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee"
+      }
+    },
+    {
+      "name": "q1_readiness_preserves_claim_boundary",
+      "passed": true,
+      "detail": {
+        "q1_strong_effective_safe_transfer": false,
+        "bounded_high_q2_selective_calibration_submission": false
+      }
+    },
+    {
+      "name": "external_arrival_detector_fail_closed",
+      "passed": true,
+      "detail": [
+        "BLOCKED_EXTERNAL_ACCESS",
+        "BLOCKED_EXTERNAL_ACCESS"
+      ]
+    },
+    {
+      "name": "cluster_dependence_analysis_validated",
+      "passed": true,
+      "detail": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "cluster_aggregation_sensitivity_validated",
+      "passed": true,
+      "detail": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "higher_level_cluster_sensitivity_validated",
+      "passed": true,
+      "detail": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "staged_preview_v4_validated",
+      "passed": true,
+      "detail": {
+        "checks": [
+          11,
+          11
+        ],
+        "status": "staged_preview_not_merged_into_authoritative_manuscript"
+      }
+    },
+    {
+      "name": "compiled_pdfs_valid",
+      "passed": true,
+      "detail": {
+        "required_present": true,
+        "count": 57
+      }
+    }
+  ]
+}

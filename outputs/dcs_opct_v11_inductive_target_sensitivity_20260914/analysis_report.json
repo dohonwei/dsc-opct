@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-09-14T12:32:59.725019+00:00",
+  "status": "completed",
+  "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "protocol": "Assignment uses stratum labels and split-seed identifiers only. CORAL, quantile maps, OPCT parameters, applicability gates, and the certificate use audit rows only; held-out covariates and outcomes are unseen until final evaluation.",
+  "datasets": 5,
+  "released_actions": 2,
+  "positive_released_heldout_gains": 2,
+  "material_negative_releases": 0,
+  "claim_boundary": "Configuration-level inductive sensitivity; split-seed configurations may still reuse underlying participant or stimulus observations."
+}

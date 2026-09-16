@@ -1,0 +1,16 @@
+paths:
+  eppvr_root: "E:/AA发表论文的数据/channel_signal_add/eppvr"
+  eppvr_metadata_root: "H:/MCC/万春霆交接资料汇总/情绪识别程序/data_hmd"
+  deap_root: "E:/AA发表论文的数据/tcgan/feature/deap"
+output_root: "outputs/physiofuse"
+seeds: [10, 20, 30, 40, 50]
+train:
+  hidden: 64
+  dropout: 0.2
+  batch_size: 32
+  epochs: 80
+  patience: 12
+  lr: 0.001
+  contrastive_weight: 0.15
+  contrastive_temperature: 0.2
+  modality_dropout: 0.15

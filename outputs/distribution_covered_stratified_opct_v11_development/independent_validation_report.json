@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "date": "2026-09-08",
+  "validator_sha256": "3ed38052fbb8034641623da55a8dd4bee0d8d1180959fd1c5c48346d080ef53a",
+  "checks_passed": 9,
+  "checks_total": 9,
+  "checks": [
+    {
+      "name": "manifest_input_hashes",
+      "passed": true,
+      "detail": {
+        "protocol": "35b04eaf7fe416388ef2bad938b14260eac1f985d2c80be41eb17609548176ec",
+        "avdos_reservation": "53e9e4221609be863775142c5663d2c610ca910c0eedc3224de46847722a5eb0",
+        "v9_failed_gate": "c8162e5bfcbc7afc21f6a50d7b4980c2466c71f325b6856e6c265e532192d00e",
+        "v10_failed_gate": "d93f6f0f1ef3cff6e952ba424283d72b7318d2464de949cb7973047f27c79997"
+      }
+    },
+    {
+      "name": "development_script_hash",
+      "passed": true,
+      "detail": "37d2a10b28031b9aa854f1db5031a9b460aa8a573df8d80f56055f40b081d5f7"
+    },
+    {
+      "name": "avdos_still_reserved_hash_only",
+      "passed": true,
+      "detail": "e6639be584e5ac2c3ff0a786fd77f88ae164fee5369f82a89b0f90a7fe97650b"
+    },
+    {
+      "name": "audit_design_tables_label_free",
+      "passed": true,
+      "detail": {
+        "geometry_columns": [
+          "dataset",
+          "task",
+          "representation",
+          "model",
+          "split_seed",
+          "identity_mean",
+          "identity_sd",
+          "action_mean",
+          "action_sd",
+          "displacement_mean",
+          "displacement_sd",
+          "decision_flip_fraction",
+          "z_identity_mean",
+          "z_identity_sd",
+          "z_action_mean",
+          "z_action_sd",
+          "z_displacement_mean",
+          "z_displacement_sd",
+          "z_decision_flip_fraction"
+        ],
+        "assignment_columns": [
+          "dataset",
+          "task",
+          "representation",
+          "model",
+          "split_seed",
+          "partition",
+          "audit_count_in_stratum",
+          "stratum_coreset_score"
+        ]
+      }
+    },
+    {
+      "name": "all_assignments_are_exact_halves",
+      "passed": true,
+      "detail": {
+        "EPPVR": {
+          "partition_counts": {
+            "heldout": 40,
+            "audit": 40
+          },
+          "recomputed_certificate_gain": 0.02217400176773097,
+          "recomputed_certificate_lcb": 0.009552772762147046,
+          "recomputed_heldout_gain": 0.02630857094777137,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "SEED-IV": {
+          "partition_counts": {
+            "heldout": 30,
+            "audit": 30
+          },
+          "recomputed_certificate_gain": NaN,
+          "recomputed_certificate_lcb": NaN,
+          "recomputed_heldout_gain": 0.0,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "DREAMER": {
+          "partition_counts": {
+            "audit": 30,
+            "heldout": 30
+          },
+          "recomputed_certificate_gain": NaN,
+          "recomputed_certificate_lcb": NaN,
+          "recomputed_heldout_gain": 0.0,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "CASE": {
+          "partition_counts": {
+            "heldout": 40,
+            "audit": 40
+          },
+          "recomputed_certificate_gain": 0.025277486801311932,
+          "recomputed_certificate_lcb": 0.011205472927509579,
+          "recomputed_heldout_gain": 0.048475379447223854,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "CEAP": {
+          "partition_counts": {
+            "audit": 40,
+            "heldout": 40
+          },
+          "recomputed_certificate_gain": 0.010168865487457966,
+          "recomputed_certificate_lcb": 0.0019362759523317808,
+          "recomputed_heldout_gain": 0.00845631292932823,
+          "certificate_match": true,
+          "heldout_match": true
+        }
+      }
+    },
+    {
+      "name": "registered_geometry_schema_complete",
+      "passed": true,
+      "detail": [
+        "identity_mean",
+        "identity_sd",
+        "action_mean",
+        "action_sd",
+        "displacement_mean",
+        "displacement_sd",
+        "decision_flip_fraction"
+      ]
+    },
+    {
+      "name": "certificates_and_heldout_metrics_reproduce",
+      "passed": true,
+      "detail": {
+        "EPPVR": {
+          "partition_counts": {
+            "heldout": 40,
+            "audit": 40
+          },
+          "recomputed_certificate_gain": 0.02217400176773097,
+          "recomputed_certificate_lcb": 0.009552772762147046,
+          "recomputed_heldout_gain": 0.02630857094777137,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "SEED-IV": {
+          "partition_counts": {
+            "heldout": 30,
+            "audit": 30
+          },
+          "recomputed_certificate_gain": NaN,
+          "recomputed_certificate_lcb": NaN,
+          "recomputed_heldout_gain": 0.0,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "DREAMER": {
+          "partition_counts": {
+            "audit": 30,
+            "heldout": 30
+          },
+          "recomputed_certificate_gain": NaN,
+          "recomputed_certificate_lcb": NaN,
+          "recomputed_heldout_gain": 0.0,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "CASE": {
+          "partition_counts": {
+            "heldout": 40,
+            "audit": 40
+          },
+          "recomputed_certificate_gain": 0.025277486801311932,
+          "recomputed_certificate_lcb": 0.011205472927509579,
+          "recomputed_heldout_gain": 0.048475379447223854,
+          "certificate_match": true,
+          "heldout_match": true
+        },
+        "CEAP": {
+          "partition_counts": {
+            "audit": 40,
+            "heldout": 40
+          },
+          "recomputed_certificate_gain": 0.010168865487457966,
+          "recomputed_certificate_lcb": 0.0019362759523317808,
+          "recomputed_heldout_gain": 0.00845631292932823,
+          "certificate_match": true,
+          "heldout_match": true
+        }
+      }
+    },
+    {
+      "name": "negative_controls_abstain",
+      "passed": true,
+      "detail": [
+        {
+          "dataset": "SEED-IV",
+          "selected_method": "identity",
+          "adapted": false
+        },
+        {
+          "dataset": "DREAMER",
+          "selected_method": "identity",
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "name": "recorded_gate_passes",
+      "passed": true,
+      "detail": {
+        "eppvr_case_ceap_certified": true,
+        "eppvr_case_ceap_heldout_gain_gt_0001": true,
+        "zero_released_material_negative_transfer": true,
+        "all_released_auc_noninferior": true,
+        "all_action_order_inversions_zero": true,
+        "seediv_and_dreamer_abstain": true,
+        "all_passed": true
+      }
+    }
+  ]
+}

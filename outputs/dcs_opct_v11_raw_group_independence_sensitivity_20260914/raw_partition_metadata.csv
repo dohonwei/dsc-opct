@@ -1,0 +1,6 @@
+dataset,raw_independence_structure,audit_subjects,evaluation_subjects,audit_stimuli,evaluation_stimuli
+CASE,participant_and_physical_stimulus_disjoint_test_rows,15,15,4.0,4.0
+CEAP,participant_and_physical_stimulus_disjoint_test_rows,16,16,4.0,4.0
+DREAMER,participant_and_physical_stimulus_disjoint_test_rows,12,11,9.0,9.0
+EPPVR,participant_disjoint_test_rows,15,15,,
+SEED-IV,participant_and_physical_stimulus_disjoint_test_rows,8,7,36.0,36.0

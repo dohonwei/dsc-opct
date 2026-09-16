@@ -1,0 +1,22 @@
+paths:
+  feature_root: "E:/AA发表论文的数据/tcgan/feature"
+output_root: "outputs/virtual_reconstruction"
+seed: 10
+target_region: "fp12"
+montages:
+  M2: ["af34"]
+  M4: ["af34", "f34"]
+  M6: ["af34", "f34", "fc12"]
+  M8: ["af34", "f34", "fc12", "t78"]
+model:
+  hidden: 128
+  dropout: 0.15
+  batch_size: 256
+  epochs: 30
+  patience: 8
+  lr: 0.001
+  l1_weight: 1.0
+  nll_weight: 0.2
+  correlation_weight: 0.1
+  mc_samples: 30
+  validation_subjects: 3

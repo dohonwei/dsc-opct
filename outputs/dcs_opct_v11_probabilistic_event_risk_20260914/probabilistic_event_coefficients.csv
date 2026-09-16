@@ -1,0 +1,11 @@
+held_out,feature,coefficient
+DEAP,opportunity_delta,0.22767264163915238
+DEAP,metadata_prior_opportunity,0.30220166856795566
+DEAP,encoding_margin,0.22670177655921353
+DEAP,dose_encoding_interaction,-0.09433115073628884
+DEAP,model_capacity,-0.009514302737547015
+MAHNOB-HCI,opportunity_delta,-0.0879465584343039
+MAHNOB-HCI,metadata_prior_opportunity,0.0223423938498154
+MAHNOB-HCI,encoding_margin,0.11469862479161178
+MAHNOB-HCI,dose_encoding_interaction,0.30540120790547753
+MAHNOB-HCI,model_capacity,0.11074963409381042

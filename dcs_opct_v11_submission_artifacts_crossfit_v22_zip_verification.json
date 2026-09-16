@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "archive": "E:\\AA发表论文的数据\\RiE\\outputs\\dcs_opct_v11_submission_artifacts_crossfit_v22.zip",
+  "archive_sha256": "442BFB517EA8DD88E0693080780946EF9A321AFC66CE8F756DE4243A6E19AC66",
+  "archive_bytes": 13686425,
+  "file_entries": 538,
+  "expected_file_entries": 538,
+  "crc_failure_entry": null,
+  "manifest_hash_mismatches": {},
+  "required_entries_missing": [],
+  "unexpected_entries": [],
+  "embedded_package_validation": {
+    "status": "passed",
+    "checks_passed": 26,
+    "checks_total": 26
+  },
+  "embedded_ekmed_validation": {
+    "status": "passed",
+    "checks_passed": 19,
+    "checks_total": 19
+  },
+  "required_entries_verified": [
+    "independent_validation_report.json",
+    "repository/docs/dcs_opct_v11_anonymous_repository_readme.md",
+    "repository/docs/dcs_opct_v11_reviewer_task_traceability_20260916.md",
+    "repository/docs/ekmed_v11_external_confirmation_implementation_lock.json",
+    "repository/outputs/ekmed_v11_archive_schema/header_schema_receipt.json",
+    "repository/outputs/ekmed_v11_external_confirmation/failure_001_structural_ineligibility.json",
+    "repository/outputs/ekmed_v11_external_confirmation/independent_validation_report.json",
+    "repository/scripts/make_dcs_opct_v22_submission_artifacts.py",
+    "repository/scripts/validate_dcs_opct_v22_submission_artifacts.py",
+    "repository/scripts/validate_ekmed_v11_confirmatory_failure.py",
+    "submission/author_confirmation_checklist.md",
+    "submission/cover_letter.md",
+    "submission/highlights.txt",
+    "submission/manuscript.pdf",
+    "submission/supplementary.pdf",
+    "submission_artifact_manifest.json"
+  ]
+}

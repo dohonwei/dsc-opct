@@ -1,0 +1,41 @@
+{
+  "status": "reservation_amended_before_archive_member_access",
+  "amendment_id": "ekmed-v11-schema-header-amendment-001",
+  "amended_at_local": "2026-09-16",
+  "reservation_path": "docs/ekmed_v11_external_confirmation_reservation.json",
+  "reservation_sha256": "e736c7e7d1d34308858f22ad75dc52faf465c76e56c63e1c46c108e06b418193",
+  "pre_amendment_access_state": {
+    "archive_download_complete": false,
+    "archive_member_opened": false,
+    "participant_value_accessed": false,
+    "outcome_accessed": false
+  },
+  "reason": "The frozen reservation correctly requires adapter implementation before participant-value parsing, but ZIP central-directory metadata cannot reveal CSV column names. This amendment fixes a header-only schema step before the archive is complete so that column-name discovery cannot become an outcome-dependent protocol change.",
+  "authorized_header_only_step": {
+    "prerequisites": [
+      "the complete archive matches the registered byte size and MD5",
+      "the ZIP central-directory manifest has been written and hashed"
+    ],
+    "eligible_members": "only the single registered SAM questionnaire CSV and one representative clean-signal CSV selected deterministically from the central-directory manifest",
+    "selection_rule": "choose the lexicographically first matching member under each registered branch before opening either member",
+    "read_boundary": "read bytes only through the first line terminator, with an absolute maximum of 65536 uncompressed bytes per selected member",
+    "allowed_output": "member path, raw header text, delimiter, encoding decision, normalized column names, byte count, and SHA-256 of the exact header bytes",
+    "forbidden_access": [
+      "second line or any participant data row",
+      "participant identifiers or questionnaire values",
+      "EEG samples, timestamps, labels, quality values, or derived features",
+      "model fitting, endpoint construction, risk scores, actions, or outcomes"
+    ],
+    "failure_policy": "missing line termination within 65536 bytes, encrypted member, unsupported encoding, ambiguous delimiter, or absent registered branch is a schema failure; no additional member may be sampled"
+  },
+  "unchanged_contracts": [
+    "cohort and exclusion rules",
+    "SAM tasks and fixed one-to-nine thresholds",
+    "four registered channels and key-moment policy",
+    "feature representations",
+    "counterfactual seeds, folds, models, doses, and material threshold",
+    "frozen risk model and DCS-OPCT v11 action gates",
+    "one-shot reporting and claim boundaries"
+  ],
+  "claim_boundary": "This amendment authorizes schema names only and supplies no participant, structural-eligibility, endpoint, effectiveness, non-harm, replication, or safety evidence."
+}

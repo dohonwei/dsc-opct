@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "generated_at_utc": "2026-09-16T11:50:11.204996+00:00",
+  "manifest_sha256": "dabdb3f4f374909b57ffdf5fd3a20f6254afd4fced7cb70b7ddd783eb1c8891d",
+  "checks_passed": 26,
+  "checks_total": 26,
+  "checks": [
+    {
+      "name": "schema_version",
+      "passed": true,
+      "detail": "dcs-opct-v11-bspc-submission-package-v22"
+    },
+    {
+      "name": "freeze_hash",
+      "passed": true,
+      "detail": "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee"
+    },
+    {
+      "name": "all_packaged_hashes_match",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "declared_file_count",
+      "passed": true,
+      "detail": 536
+    },
+    {
+      "name": "all_source_hashes_current",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "main_pdf_valid_and_fresh",
+      "passed": true,
+      "detail": 1789557707.4191575
+    },
+    {
+      "name": "supp_pdf_valid_and_fresh",
+      "passed": true,
+      "detail": 1789558179.533604
+    },
+    {
+      "name": "latex_logs_clean",
+      "passed": true,
+      "detail": [
+        "dcs_opct_v11_bspc_manuscript.log",
+        "dcs_opct_v11_bspc_supplementary.log"
+      ]
+    },
+    {
+      "name": "reviewer_closure_14_of_14",
+      "passed": true,
+      "detail": [
+        14,
+        14
+      ]
+    },
+    {
+      "name": "raw_partition_first_21_of_21",
+      "passed": true,
+      "detail": [
+        21,
+        21
+      ]
+    },
+    {
+      "name": "reproducibility_inventory_23_of_23",
+      "passed": true,
+      "detail": [
+        23,
+        23
+      ]
+    },
+    {
+      "name": "reviewer_task_traceability_16_of_16",
+      "passed": true,
+      "detail": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "ekmed_confirmatory_failure_19_of_19",
+      "passed": true,
+      "detail": [
+        19,
+        19
+      ]
+    },
+    {
+      "name": "ekmed_implementation_lock_immutable",
+      "passed": true,
+      "detail": "ec729f31627033819af91368995089780c2825dac3cee3f0ae233d73bf380235"
+    },
+    {
+      "name": "ekmed_failure_record_immutable",
+      "passed": true,
+      "detail": "8f621780673a87e455594ec46e2bb38ef1538470f355471b46de0f64633cb070"
+    },
+    {
+      "name": "claim_overstatement_guard",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "claim_boundaries_present",
+      "passed": true,
+      "detail": [
+        "no positive fully training-data-independent release",
+        "does not establish prospective external effectiveness",
+        "does not establish universal",
+        "fail-closed"
+      ]
+    },
+    {
+      "name": "highlights_match_manuscript",
+      "passed": true,
+      "detail": [
+        "Counterfactual identity dose separates opportunity, encoding, and utilization.",
+        "Identity exposure can reverse model ranking under joint-unseen deployment.",
+        "A mechanism-derived audit-risk score transfers ranking but may lose calibration.",
+        "DCS-OPCT preserves ordering and releases only after a stratified audit certificate.",
+        "Stronger data separation contracts release and triggers fail-closed non-intervention."
+      ]
+    },
+    {
+      "name": "funding_statement_verified",
+      "passed": true,
+      "detail": "NSFC 62172081"
+    },
+    {
+      "name": "ethical_committee_wording_verified",
+      "passed": true,
+      "detail": "Ethical Committee wording"
+    },
+    {
+      "name": "funding_todo_removed",
+      "passed": true,
+      "detail": "no Funding TODO"
+    },
+    {
+      "name": "sensitive_outputs_excluded",
+      "passed": true,
+      "detail": [
+        "fit_provenance.csv",
+        "participant_population_assignment.csv",
+        "population_predictions.csv"
+      ]
+    },
+    {
+      "name": "no_raw_signal_files_packaged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "restricted_data_flag_false",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "author_blockers_exact",
+      "passed": true,
+      "detail": [
+        "Insert an anonymous read-only repository URL or archival DOI in the manuscript."
+      ]
+    },
+    {
+      "name": "submission_attachments_complete",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "author_dependent_blockers": [
+    "Insert an anonymous read-only repository URL or archival DOI in the manuscript."
+  ],
+  "external_scientific_blocker": "The prospectively reserved EKM-ED attempt failed structural endpoint eligibility before model fitting, and no compatible external dataset has passed all frozen gates and produced a non-identity release. This package therefore does not claim prospective external effectiveness, future-domain non-harm, or universal safety.",
+  "claim_boundary": "The package supports retrospective selective configuration-level audit-risk calibration within evaluated development support and verifies fail-closed execution, including a prospective endpoint-transport failure. It does not establish positive fully training-data-independent calibration, prospective external effectiveness, future-domain non-harm, or direct improvement of EEG emotion predictions."
+}

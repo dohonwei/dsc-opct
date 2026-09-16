@@ -1,0 +1,30 @@
+{
+  "audit_id": "ekmed-v11-preaccess-history-audit-20260916",
+  "status": "no_prior_ekmed_participant_value_use_found",
+  "audited_at_local": "2026-09-16T17:39:56+08:00",
+  "dataset": "EmoKey Moments Muse EEG Dataset (EKM-ED)",
+  "official_record": "doi:10.5281/zenodo.8431451",
+  "workspace_root": "E:/AA发表论文的数据/RiE",
+  "search_terms": ["8431451", "8431450", "EKM-ED", "EmoKey Moments", "EmoKey"],
+  "workspace_search_result": "no matches before reservation",
+  "local_paths_checked": [
+    "E:/AA发表论文的数据/dataset/EKM-ED",
+    "E:/AA发表论文的数据/dataset/EmoKey",
+    "E:/AA发表论文的数据/dataset/EmoKey Moments EEG Dataset (EKM-ED).zip"
+  ],
+  "local_data_root_present_before_registration": false,
+  "accessed_before_registration": [
+    "public Zenodo record metadata",
+    "public record description and folder-structure description",
+    "public file name, byte size, checksum, access status, and license"
+  ],
+  "not_accessed_before_registration": [
+    "archive central directory",
+    "participant identifiers or participant-level metadata values",
+    "SAM questionnaire rows",
+    "EEG samples or derived features",
+    "identity-dose outcomes",
+    "audit-risk probabilities, calibration actions, certificates, or held-out results"
+  ],
+  "interpretation": "The audit supports prospective reservation of EKM-ED for one frozen DCS-OPCT v11 dataset-specific external confirmation. It does not establish archive integrity, structural eligibility, endpoint variation, applicability, effectiveness, non-harm, replication, or safety."
+}

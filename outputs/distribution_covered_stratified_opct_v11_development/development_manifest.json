@@ -1,0 +1,74 @@
+{
+  "status": "dcs_opct_v11_development_complete",
+  "date": "2026-09-08",
+  "claim_status": "development_only_avdos_remains_untouched",
+  "probability_action": "wg_opct_v9_unchanged",
+  "geometry_columns": [
+    "identity_mean",
+    "identity_sd",
+    "action_mean",
+    "action_sd",
+    "displacement_mean",
+    "displacement_sd",
+    "decision_flip_fraction"
+  ],
+  "stratum_columns": [
+    "task",
+    "representation",
+    "model"
+  ],
+  "sd_weight": 0.05,
+  "witness_thresholds": {
+    "minimum_directional_agreement": 0.9,
+    "minimum_displacement_cosine": 0.9,
+    "maximum_normalized_disagreement": 0.35
+  },
+  "opct_rule": {
+    "name": "opct_v6_h160_m001",
+    "epochs": 500,
+    "learning_rate": 0.03,
+    "regularization": 0.0001,
+    "minimum_scale": 0.1,
+    "maximum_scale": 5.0,
+    "maximum_absolute_shift": 5.0,
+    "maximum_probability_mean_shift": 0.1,
+    "minimum_rank": 0.999999,
+    "configuration_budget": 160,
+    "minimum_certified_gain": 0.001,
+    "auc_noninferiority_margin": -0.02
+  },
+  "risk_control_config": {
+    "configuration_budgets": [
+      160
+    ],
+    "configurations_per_cluster": 4,
+    "familywise_alpha": 0.05,
+    "bootstrap_repetitions": 5000,
+    "auc_noninferiority_margin": -0.02,
+    "minimum_brier_gain": 0.001,
+    "minimum_probability_rank": 0.95,
+    "maximum_absolute_probability_mean_shift": 0.1,
+    "maximum_absolute_predicted_brier_gain": 1.0,
+    "maximum_absolute_predicted_auc_delta": 1.0,
+    "minimum_valid_auc_bootstraps": 500,
+    "cluster_columns": [
+      "task",
+      "representation",
+      "model",
+      "split_seed"
+    ],
+    "balance_columns": [
+      "task",
+      "representation",
+      "model"
+    ]
+  },
+  "gpu_name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "script_sha256": "37d2a10b28031b9aa854f1db5031a9b460aa8a573df8d80f56055f40b081d5f7",
+  "input_sha256": {
+    "protocol": "35b04eaf7fe416388ef2bad938b14260eac1f985d2c80be41eb17609548176ec",
+    "avdos_reservation": "53e9e4221609be863775142c5663d2c610ca910c0eedc3224de46847722a5eb0",
+    "v9_failed_gate": "c8162e5bfcbc7afc21f6a50d7b4980c2466c71f325b6856e6c265e532192d00e",
+    "v10_failed_gate": "d93f6f0f1ef3cff6e952ba424283d72b7318d2464de949cb7973047f27c79997"
+  }
+}

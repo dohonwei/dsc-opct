@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "generated_at_utc": "2026-09-14T14:33:20.607125+00:00",
+  "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "candidate_fit_resources": "source configuration labels plus audit-side unlabeled target features",
+  "release_resources": "same full inductive audit-label certificate used for DCS-OPCT",
+  "atc_output": "aggregate target hard-classification accuracy estimate; not a probability action",
+  "claim_boundary": "CPCS-style and ATC-style adaptations respect the configuration-level task but are not claimed as verbatim reproductions of instance-level implementations. TransCal is not instantiated because the study has no adapted target classifier logits or target task model required by its primary formulation."
+}

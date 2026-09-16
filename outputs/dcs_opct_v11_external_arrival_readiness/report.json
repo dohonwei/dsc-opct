@@ -1,0 +1,29 @@
+{
+  "status": "blocked_external_access",
+  "generated_at_utc": "2026-09-10T01:26:40.533703+00:00",
+  "audit_scope": "metadata-only external-dataset arrival detection",
+  "freeze_sha256": "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee",
+  "automatic_execution": false,
+  "participant_values_accessed": false,
+  "datasets": [
+    {
+      "dataset": "AMIGOS",
+      "status": "BLOCKED_EXTERNAL_ACCESS",
+      "acquisition_path": "E:\\AA发表论文的数据\\dataset\\AMIGOS",
+      "participant_values_accessed": false,
+      "next_command": null,
+      "gpu_one_shot_command": null,
+      "interpretation": "The authorized dataset is not present; no analysis can start."
+    },
+    {
+      "dataset": "Emognition",
+      "status": "BLOCKED_EXTERNAL_ACCESS",
+      "acquisition_path": "E:\\AA发表论文的数据\\dataset\\Emognition\\study_data.zip",
+      "participant_values_accessed": false,
+      "next_command": null,
+      "gpu_one_shot_command": null,
+      "interpretation": "The authorized dataset is not present; no analysis can start."
+    }
+  ],
+  "claim_boundary": "This detector checks path and lock-file availability only. It neither opens participant records nor supplies structural, endpoint, effectiveness, non-harm, replication, or safety evidence."
+}

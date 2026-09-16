@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "generated_at_utc": "2026-09-14T17:09:19.029170+00:00",
+  "checks_passed": 21,
+  "checks_total": 21,
+  "checks": {
+    "analysis_completed": true,
+    "cuda_device_recorded": true,
+    "participant_assignment_is_15_15": true,
+    "participant_sets_are_disjoint": true,
+    "all_30_participants_are_assigned_once": true,
+    "assignment_is_outcome_blind": true,
+    "prediction_subjects_stay_in_population": true,
+    "fit_subjects_stay_in_population": true,
+    "all_fits_have_zero_train_test_row_overlap": true,
+    "emotion_fit_count_exact": true,
+    "identity_probe_fit_count_exact": true,
+    "risk_configuration_counts_exact": true,
+    "risk_events_are_binary": true,
+    "risk_probabilities_are_finite_unit_interval": true,
+    "certificate_budget_is_160_in_full_run": true,
+    "components_fit_on_audit_and_apply_to_evaluation": true,
+    "single_certificate_and_outcome": true,
+    "evaluation_action_covers_all_evaluation_configs": true,
+    "evaluation_action_probabilities_finite": true,
+    "selection_and_certificate_are_consistent": true,
+    "claim_boundary_is_explicit": true
+  },
+  "failed_checks": [],
+  "claim_boundary": "Retrospective fully participant- and training-row-disjoint EPPVR sensitivity. It is not a new-dataset, prospective, cross-session, or stimulus-independent validation."
+}

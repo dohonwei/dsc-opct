@@ -1,0 +1,134 @@
+{
+  "status": "passed",
+  "generated_at_utc": "2026-09-10T01:26:56.806875+00:00",
+  "phase": "pre-submission software and evidence readiness",
+  "claim_boundary": "This audit establishes internal reproducibility and pre-access software readiness only. It is not external effectiveness, non-harm, or safety evidence.",
+  "checks": {
+    "all_commands_passed": true,
+    "freeze_hash_unchanged": true,
+    "cuda_available": true,
+    "both_preaccess_stacks_current": true,
+    "dataset_availability_matrix_present": true,
+    "external_arrival_detector_fail_closed": true
+  },
+  "commands": [
+    {
+      "name": "compile_scripts",
+      "command": [
+        "D:\\conda_envs\\py311\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "scripts"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "elapsed_seconds": 0.106,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "name": "ruff_safety_stack",
+      "command": [
+        "D:\\conda_envs\\py311\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "scripts/external_wearable_v11_pipeline.py",
+        "scripts/external_wearable_implementation_lock.py",
+        "scripts/external_wearable_one_shot_core.py",
+        "scripts/test_external_wearable_one_shot_end_to_end.py",
+        "scripts/emognition_v11_schema_adapter.py",
+        "scripts/run_emognition_v11_external_confirmation.py",
+        "scripts/test_emognition_v11_schema_adapter.py",
+        "scripts/test_emognition_v11_archive_adapter.py",
+        "scripts/validate_emognition_v11_preaccess_stack.py",
+        "scripts/validate_amigos_v11_preaccess_stack.py",
+        "scripts/validate_dcs_opct_v11_release_readiness.py",
+        "scripts/detect_dcs_opct_v11_external_arrival.py",
+        "scripts/validate_dcs_opct_v11_external_arrival.py",
+        "scripts/audit_dcs_opct_v11_q1_submission_readiness.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "elapsed_seconds": 0.058,
+      "stdout_tail": "All checks passed!",
+      "stderr_tail": ""
+    },
+    {
+      "name": "validate_external_arrival_detector",
+      "command": [
+        "D:\\conda_envs\\py311\\python.exe",
+        "scripts/validate_dcs_opct_v11_external_arrival.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "elapsed_seconds": 0.068,
+      "stdout_tail": "External-arrival validation passed: 7/7",
+      "stderr_tail": ""
+    },
+    {
+      "name": "refresh_external_arrival_status",
+      "command": [
+        "D:\\conda_envs\\py311\\python.exe",
+        "scripts/detect_dcs_opct_v11_external_arrival.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "elapsed_seconds": 0.071,
+      "stdout_tail": "AMIGOS: BLOCKED_EXTERNAL_ACCESS\nEmognition: BLOCKED_EXTERNAL_ACCESS",
+      "stderr_tail": ""
+    },
+    {
+      "name": "validate_submission_artifacts",
+      "command": [
+        "D:\\conda_envs\\py311\\python.exe",
+        "scripts/validate_dcs_opct_v11_submission_artifacts.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "elapsed_seconds": 1.405,
+      "stdout_tail": "Independent validation passed: 78/78 checks",
+      "stderr_tail": ""
+    }
+  ],
+  "preaccess_stack_reports": [
+    {
+      "dataset": "AMIGOS",
+      "passed": true,
+      "checks": {
+        "status_passed": true,
+        "expected_test_groups": true,
+        "all_test_groups_passed": true,
+        "freeze_hash_unchanged": true,
+        "current_code_hashes_match": true
+      },
+      "mismatches": {},
+      "report_sha256": "ba62fdabd3981f8ff760f9f1b123d57e23b605288be30b9b7c0bfe892fdc6981"
+    },
+    {
+      "dataset": "Emognition",
+      "passed": true,
+      "checks": {
+        "status_passed": true,
+        "expected_test_groups": true,
+        "all_test_groups_passed": true,
+        "freeze_hash_unchanged": true,
+        "current_code_hashes_match": true
+      },
+      "mismatches": {},
+      "report_sha256": "04b37210b28f6d113fceeb6039a4fa61b4d2e30e1f8f81c8782b7af34476fda2"
+    }
+  ],
+  "environment": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 4070 Ti SUPER"
+  },
+  "freeze_sha256": "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee",
+  "driver_sha256": "51b8635b05392d7f1c3446ffd4deb083fc841699dcbe7746dec2582771eddce3",
+  "dataset_availability_matrix_sha256": "6ef2334ad5568f80f0eb94daa4fbcf3f1721bb018e51a325a4a5a490949a8bf2",
+  "external_arrival_report_sha256": "504569283b211c79cb34dd58cf8be1623a8774cb7669035d9e8a958bd2898088",
+  "elapsed_seconds": 2.443
+}

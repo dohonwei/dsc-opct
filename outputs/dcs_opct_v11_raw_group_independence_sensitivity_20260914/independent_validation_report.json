@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "generated_at_utc": "2026-09-14T14:26:36.933841+00:00",
+  "checks_passed": 13,
+  "checks_total": 13,
+  "checks": {
+    "analysis_completed": true,
+    "cuda_device_recorded": true,
+    "bootstrap_repetitions_at_least_5000": true,
+    "all_datasets_present": true,
+    "configuration_counts_exact": true,
+    "configuration_partitions_complete": true,
+    "event_labels_binary": true,
+    "test_rows_nonempty": true,
+    "eppvr_participant_disjoint": true,
+    "other_domains_participant_stimulus_disjoint": true,
+    "only_eppvr_released": true,
+    "released_gain_positive_and_no_material_harm": true,
+    "case_failed_certificate": true
+  },
+  "failed_checks": [],
+  "claim_boundary": "Raw test participants and, where identifiable, physical stimuli are disjoint. Shared model-training rows and repeated split-seed fits remain unresolved."
+}

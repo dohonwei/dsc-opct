@@ -1,0 +1,6 @@
+dataset,method,target_labels_for_candidate_fit,audit_labels_for_certificate,released,audit_brier_gain,audit_brier_gain_lcb,heldout_brier_gain_cpcs,heldout_auc_delta_cpcs,material_negative_transfer_cpcs,dcs_selected_method,audit_configurations,heldout_brier_gain_dcs,heldout_auc_delta_dcs,material_negative_transfer_dcs,paired_gain_dcs_minus_cpcs
+CASE,cpcs_style_iw_platt_certified,0,160,False,-0.013647408952711187,-0.017832065010152803,0.0,0.0,False,wg_opct,160,0.0406134456265868,0.0,False,0.0406134456265868
+CEAP,cpcs_style_iw_platt_certified,0,160,False,-0.005613067438909368,-0.009916143653577706,0.0,0.0,False,identity,160,0.0,0.0,False,0.0
+DREAMER,cpcs_style_iw_platt_certified,0,120,False,-0.004320315006986806,-0.008246482150781262,0.0,0.0,False,identity,120,0.0,0.0,False,0.0
+EPPVR,cpcs_style_iw_platt_certified,0,160,False,-0.019589758765958233,-0.02680538439607628,0.0,0.0,False,wg_opct,160,0.0226337003733521,0.0,False,0.0226337003733521
+SEED-IV,cpcs_style_iw_platt_certified,0,120,False,-0.0018803235956079032,-0.006289423355879605,0.0,0.0,False,identity,120,0.0,0.0,False,0.0

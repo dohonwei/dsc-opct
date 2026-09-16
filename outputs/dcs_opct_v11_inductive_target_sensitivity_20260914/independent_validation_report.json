@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks_passed": 12,
+  "checks_total": 12,
+  "checks": {
+    "five_domains": true,
+    "balanced_partitions": true,
+    "assignment_is_covariate_blind": true,
+    "prediction_partition_complete": true,
+    "identity_reconstructs": true,
+    "eppvr_case_release": true,
+    "eppvr_case_positive_gain": true,
+    "ceap_inductive_abstention": true,
+    "unsupported_domains_abstain": true,
+    "zero_material_negative_release": true,
+    "transductive_reference_present": true,
+    "boundary_explicit": true
+  }
+}

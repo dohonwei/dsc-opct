@@ -1,0 +1,127 @@
+{
+  "status": "reserved_before_participant_value_access",
+  "registration_id": "emognition-dcs-opct-v11-one-shot-external-replication-20260909",
+  "registered_at_local": "2026-09-09",
+  "dataset": "Emognition Wearable Dataset 2020",
+  "dataset_role": "prospectively reserved one-shot independent wearable-EEG external replication of frozen DCS-OPCT v11",
+  "scientific_scope": "cross-dataset, cross-device, and cross-channel-count transfer to independently collected four-channel Muse EEG during shared affective videos",
+  "preaccess_history_audit": "docs/emognition_v11_preaccess_history_audit.json",
+  "source": {
+    "article": "Saganowski et al., Scientific Data 9, 158 (2022), doi:10.1038/s41597-022-01262-0",
+    "dataverse": "doi:10.7910/DVN/R9WAF4",
+    "dataverse_version_at_registration": 6,
+    "official_code_repository": "https://github.com/Emognition/Emognition-wearable-dataset-2020",
+    "access_condition": "academic use under the official EULA; signed EULA sent from an academic email associated with the Harvard Dataverse account",
+    "access_contact": "emotions@pwr.edu.pl",
+    "expected_public_scale": "43 participants, ten shared stimulus videos, four-channel Muse EEG sampled at 256 Hz"
+  },
+  "relationship_to_amigos": {
+    "amigos_remains_reserved": true,
+    "no_outcome_based_dataset_selection": true,
+    "reporting_rule": "Every acquired and executed one-shot dataset is reported, including ineligibility, abstention, null, or harmful outcomes.",
+    "dataset_specific_claim": "A passing dataset may support a prospective dataset-specific external result.",
+    "replication_claim": "Replicated external effectiveness may be claimed only if both AMIGOS and Emognition are acquired, endpoint-eligible, release non-identity actions, and independently pass every frozen effectiveness and non-harm requirement.",
+    "unavailable_dataset_rule": "An acquisition failure is reported as an acquisition failure and supplies no effectiveness or safety evidence."
+  },
+  "cohort_contract": {
+    "participants": "all 43 publicly described participant identifiers are attempted",
+    "minimum_eligible_participants_per_task": 30,
+    "stimulus_trials": "the ten STIMULUS-phase videos; BASELINE, WASHOUT, and QUESTIONNAIRES phases are excluded from the primary endpoint",
+    "minimum_usable_labeled_trials_per_participant_per_task": 6,
+    "participant_task_requirements": "at least one high and one low label, all four registered EEG channels, and at least three valid four-second windows in every retained trial",
+    "exclusions": "only absent or unreadable registered files, missing phase boundaries, absent registered channels, nonfinite signal, unusable Muse contact-quality status under the locked schema adapter, midpoint questionnaire label, or fewer than three valid analysis windows; no exclusion based on identity encoding, classifier accuracy, material events, risk score, calibration action, or certificate",
+    "hard_failure": "stop before model fitting for a task if fewer than 30 participants meet its locked requirements"
+  },
+  "task_contract": {
+    "tasks": [
+      "experienced valence: high versus low",
+      "experienced arousal: high versus low"
+    ],
+    "label_source": "post-stimulus Self-Assessment Manikin response on the published nine-point scale",
+    "label_rule": "high if rating >= 6, low if rating <= 4, and rating 5 excluded as the scale midpoint",
+    "forbidden_relabeling": "no sample median, prevalence target, stimulus identity, model output, performance, or calibration-dependent thresholding",
+    "claim_boundary": "The tasks concern self-reported experienced affect and are not interchangeable with fixed intended-stimulus quadrants."
+  },
+  "trial_contract": {
+    "unit": "participant by physical stimulus video",
+    "stimulus_identity": "the ten published stimulus categories shared across participants",
+    "primary_axis": "participant identity",
+    "pseudoreplication_rule": "one aggregate feature vector per participant-video pair; windows, samples, and device packets are not independent trials"
+  },
+  "feature_contract": {
+    "sensor": "Muse wearable EEG",
+    "sampling_rate_hz": 256,
+    "required_channels": ["TP9", "AF7", "AF8", "TP10"],
+    "bilateral_pairs": [["AF7", "AF8"], ["TP9", "TP10"]],
+    "representations": ["all", "relative_power", "normalized_asymmetry"],
+    "bands_hz": {
+      "theta": [4, 8],
+      "alpha": [8, 13],
+      "beta": [13, 30],
+      "gamma": [30, 45]
+    },
+    "construction": "STIMULUS-phase raw channels, common-average reference, four-second windows with two-second step, linear detrending, Welch PSD, fixed band integration, and mean/population-SD/least-squares-slope summaries identical to the frozen-equivalent AMIGOS/FACED feature core",
+    "baseline_policy": "baseline is not used in the primary one-shot representation; any baseline-referenced analysis is explicitly post-primary exploratory and cannot change the registered action or claim",
+    "unavailable_representation_policy": "hard failure rather than channel substitution or feature replacement",
+    "forbidden_predictors": [
+      "dataset identity",
+      "task identity",
+      "representation identity",
+      "model identity",
+      "participant identifier",
+      "stimulus identifier"
+    ]
+  },
+  "counterfactual_contract": {
+    "subject_folds": 5,
+    "stimulus_folds": 5,
+    "split_seeds": [20260813, 20260829, 20260911, 20260923, 20261007],
+    "models": ["linear_logistic", "gpu_mlp"],
+    "gpu_epochs": 40,
+    "doses": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "candidate_draws": 256,
+    "intervention_block_fraction": 0.5,
+    "fixed_quantities": ["test rows", "training size", "binary class counts", "identity coverage"],
+    "material_event_threshold": 0.02,
+    "expected_nonzero_configuration_count_if_complete": 240
+  },
+  "frozen_risk_contract": {
+    "model": "outputs/identity_shortcut_risk_classifier/frozen_risk_model.joblib",
+    "model_sha256": "4a9a128b7a2966e1d9f30021f81361a2fb8688920d24a123240ba77795b741b9",
+    "decision_threshold": 0.1861927735644462,
+    "predictors": ["opportunity_delta", "metadata_prior_opportunity", "encoding_margin", "dose_encoding_interaction", "model_capacity"],
+    "no_refit": true
+  },
+  "dcs_opct_v11_contract": {
+    "freeze": "docs/distribution_covered_stratified_opct_v11_final_freeze.json",
+    "freeze_sha256": "fe0d6b2f3bb7a90da51fd7b030f0f4874d2dee9ab14175a20f9f4e8d0d71b0ee",
+    "audit_fraction": 0.5,
+    "bootstrap_repetitions": 5000,
+    "minimum_brier_gain_lcb": 0.001,
+    "auc_noninferiority_margin": -0.02,
+    "minimum_probability_rank": 0.999999,
+    "maximum_order_inversions": 0,
+    "fallback": "identity",
+    "primary_audit_seed": 20260908,
+    "one_shot_rule": "the first locked complete execution is the only confirmatory Emognition analysis; later cohort, label, quality, channel, seed, fold, feature, or baseline variants are exploratory"
+  },
+  "acceptance_gate": {
+    "endpoint_eligibility": "both audit and held-out partitions contain at least one material event and one non-event; otherwise discrimination and calibration effectiveness are non-estimable",
+    "effectiveness": "a non-identity action is applicable, independently certified, and has held-out Brier gain greater than 0.001",
+    "released_action_nonharm": "held-out Brier gain is nonnegative, held-out AUROC delta is at least -0.02, rank is at least 0.999999, and order inversions equal zero",
+    "identity_fallback": "identity is non-intervention and is not evidence of effectiveness or safety success",
+    "failure_policy": "all acquisition, structural, construction, endpoint-eligibility, applicability, certification, effectiveness, and non-harm failures remain reportable and immutable"
+  },
+  "execution_order": [
+    "validate this reservation and the unchanged v11 freeze",
+    "obtain written EULA authorization and download only the official study archive",
+    "write and hash a file-name, byte-size, checksum, and container-schema manifest before parsing participant values",
+    "implement and test the schema-specific adapter on synthetic fixtures",
+    "write the implementation lock",
+    "parse participant, trial, questionnaire, quality, and EEG values once",
+    "run the registered feature construction and counterfactual experiment once",
+    "write and hash the unlabeled action and audit assignment before attaching material-event outcomes",
+    "apply frozen DCS-OPCT v11 once and preserve every outcome"
+  ],
+  "claim_boundary": "This reservation authorizes a future one-shot Emognition evaluation. It does not assert archive access, structural eligibility, endpoint variation, applicability, effectiveness, non-harm, safety, or replicated confirmation."
+}

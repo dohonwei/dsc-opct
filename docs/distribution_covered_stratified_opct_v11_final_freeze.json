@@ -1,0 +1,119 @@
+{
+  "status": "frozen_for_one_shot_external_confirmation",
+  "freeze_id": "dcs-opct-v11-final-20260908",
+  "frozen_at_local": "2026-09-08",
+  "method": "Distribution-Covered Stratified Order-Preserving Calibration Transport (DCS-OPCT v11)",
+  "development_status": {
+    "primary_gate": "passed",
+    "independent_validation": "9/9 passed",
+    "probability_action": "WG-OPCT v9 unchanged",
+    "failed_predecessors_preserved": [
+      "CEAP v6 external effectiveness failure",
+      "C-OPCT v7 CEAP release/effect failure",
+      "CG-OPCT v8 CEAP development-gate failure",
+      "WG-OPCT v9 CEAP release-gate failure",
+      "BSW-OPCT v10 negative-transfer failure"
+    ]
+  },
+  "probability_action": {
+    "primary_transform": "CORAL followed by positive-slope OPCT",
+    "unlabeled_witness": "quantile mapping followed by positive-slope OPCT",
+    "formula": "sigmoid(a * logit(p) + b), a > 0",
+    "epochs": 500,
+    "learning_rate": 0.03,
+    "regularization": 0.0001,
+    "minimum_scale": 0.1,
+    "maximum_scale": 5.0,
+    "maximum_absolute_shift": 5.0,
+    "maximum_probability_mean_shift": 0.1,
+    "minimum_probability_rank": 0.999999,
+    "maximum_order_inversions": 0,
+    "minimum_directional_agreement": 0.9,
+    "minimum_displacement_cosine": 0.9,
+    "maximum_normalized_disagreement": 0.35,
+    "fallback": "identity"
+  },
+  "distribution_covered_audit": {
+    "cluster_columns": [
+      "task",
+      "representation",
+      "model",
+      "split_seed"
+    ],
+    "stratum_columns": [
+      "task",
+      "representation",
+      "model"
+    ],
+    "geometry_columns": [
+      "identity_mean",
+      "identity_sd",
+      "action_mean",
+      "action_sd",
+      "displacement_mean",
+      "displacement_sd",
+      "decision_flip_fraction"
+    ],
+    "selection_objective": "squared mean mismatch plus 0.05 times squared standard-deviation mismatch",
+    "sd_weight": 0.05,
+    "selection_rule": "enumerate all size-two or size-three split-seed subsets within each stratum, with parity-determined audit count and lexicographic split-seed tie breaking",
+    "audit_fraction": 0.5,
+    "label_access": "none before assignment lock"
+  },
+  "certification": {
+    "audit_configuration_budget": 160,
+    "audit_cluster_budget": 40,
+    "configurations_per_cluster": 4,
+    "bootstrap_unit": "complete four-dose split-seed cluster",
+    "bootstrap_stratification": "task by representation by model",
+    "bootstrap_repetitions": 5000,
+    "familywise_alpha": 0.05,
+    "minimum_brier_gain_lcb": 0.001,
+    "auc_noninferiority_margin": -0.02,
+    "minimum_valid_auc_bootstraps": 500,
+    "primary_audit_seed": 20260908,
+    "auc_certificate": "analytic zero delta only when rank and inversion gates pass"
+  },
+  "retrospective_development_evidence": {
+    "EPPVR": {
+      "audit_brier_gain": 0.02217400176773097,
+      "audit_brier_gain_lcb": 0.009552772762147046,
+      "heldout_brier_gain": 0.02630857094777137
+    },
+    "CASE": {
+      "audit_brier_gain": 0.025277486801311932,
+      "audit_brier_gain_lcb": 0.011205472927509579,
+      "heldout_brier_gain": 0.048475379447223854
+    },
+    "CEAP": {
+      "audit_brier_gain": 0.010168865487457966,
+      "audit_brier_gain_lcb": 0.0019362759523317808,
+      "heldout_brier_gain": 0.00845631292932823
+    },
+    "SEED-IV": "identity abstention",
+    "DREAMER": "identity abstention"
+  },
+  "locked_artifacts": {
+    "docs/distribution_covered_stratified_opct_v11_development_protocol.md": "35b04eaf7fe416388ef2bad938b14260eac1f985d2c80be41eb17609548176ec",
+    "scripts/develop_distribution_covered_stratified_opct_v11.py": "37d2a10b28031b9aa854f1db5031a9b460aa8a573df8d80f56055f40b081d5f7",
+    "outputs/distribution_covered_stratified_opct_v11_development/development_manifest.json": "9d8b292ef387a5621488318ced5ce2f1c3cadc4638cb28b39a21e121734ffb08",
+    "outputs/distribution_covered_stratified_opct_v11_development/development_acceptance_gate.json": "c15147133e15921bd9428bf72dcc10f5e09d6f2571ab44d8ef4cc42926695ba6",
+    "outputs/distribution_covered_stratified_opct_v11_development/independent_validation_report.json": "cb2ac1abac4a290871c0a57ddd22a69957c1943e0bfd014aa323ccc7f2a86353",
+    "scripts/develop_witness_gated_covariance_opct_v9.py": "a5237e808de649dfa99325c81a692bc78492b4b5bd552b5874a271877d4fbb52",
+    "scripts/develop_order_preserving_transport_v6.py": "0839bd45c9ccc4c3e53957ddaec84bbca071fb8a9e2c40c5bee4bd403696f6c8",
+    "scripts/develop_risk_controlled_transport_v5.py": "946d5f4cf842ef73e25186a395532cab2dbbd2dfff7a9c222a7edb96aea814c0",
+    "scripts/apply_frozen_transport_policy_to_seediv.py": "c9650bf6b7796b95714ca30753622556f03e05a37a4dd4ebda24971a1239be50",
+    "src/identity_shortcut/domain_transport.py": "cad94c7c7f540beecf3c1b2e4a098bd21815d7ecf370620f1ca8daeaf58c9a28",
+    "src/identity_shortcut/risk_controlled_transport.py": "1cfb42e4d55df55ee41183825196cfb9d18de9c914bfafb0223950e40693d2f1",
+    "outputs/identity_shortcut_risk_classifier/freeze_manifest.json": "2d953fba14854f58edc8a4ee6dbb58925fceccc0e198ed568f442349200673a5",
+    "outputs/identity_shortcut_risk_classifier/frozen_risk_model.joblib": "4a9a128b7a2966e1d9f30021f81361a2fb8688920d24a123240ba77795b741b9",
+    "outputs/identity_shortcut_risk_classifier/risk_learning_table.csv": "ffb6841393cec41e086ebfd10781a86e7f8079c6d7e92bc7861c14d5f11c0330"
+  },
+  "external_test": {
+    "dataset": "AVDOS-VR",
+    "reservation": "docs/avdos_v7_external_confirmation_reservation.json",
+    "role": "untouched one-shot external confirmation on the official derived wearable physiology feature table",
+    "rule": "no algorithm, feature, threshold, split, seed, candidate, audit assignment, or acceptance-gate change after participant values are accessed"
+  },
+  "claim_boundary_before_external_result": "Development evidence supports a selectively safe transfer procedure on the development datasets. External effectiveness and safety on AVDOS-VR have not yet been evaluated or established."
+}

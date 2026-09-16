@@ -1,0 +1,9 @@
+{
+  "eppvr_case_ceap_certified": true,
+  "eppvr_case_ceap_heldout_gain_gt_0001": true,
+  "zero_released_material_negative_transfer": true,
+  "all_released_auc_noninferior": true,
+  "all_action_order_inversions_zero": true,
+  "seediv_and_dreamer_abstain": true,
+  "all_passed": true
+}

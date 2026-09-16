@@ -1,0 +1,6 @@
+dataset,rule,n_audit_configurations,n_heldout_configurations,selected_method,adapted,brier_gain,auc_delta,negative_transfer,material_negative_transfer,auc_noninferior
+EPPVR,dcs_opct_v11_distribution_covered_stratified,160,160,wg_opct,True,0.02630857094777137,0.0,False,False,True
+SEED-IV,dcs_opct_v11_distribution_covered_stratified,120,120,identity,False,0.0,0.0,False,False,True
+DREAMER,dcs_opct_v11_distribution_covered_stratified,120,120,identity,False,0.0,0.0,False,False,True
+CASE,dcs_opct_v11_distribution_covered_stratified,160,160,wg_opct,True,0.048475379447223854,0.0,False,False,True
+CEAP,dcs_opct_v11_distribution_covered_stratified,160,160,wg_opct,True,0.008456312929328231,0.0,False,False,True

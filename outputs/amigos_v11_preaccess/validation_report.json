@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "date": "2026-09-09",
+  "phase": "pre-access only",
+  "dataset": "AMIGOS",
+  "checks_passed": 17,
+  "checks_total": 17,
+  "checks": {
+    "reservation_exists": true,
+    "history_audit_exists": true,
+    "data_absent_at_registration": true,
+    "current_local_archive_absent": true,
+    "minimum_participants_locked": true,
+    "complete_short_video_map_locked": true,
+    "registered_montage_locked": true,
+    "bilateral_pairs_locked": true,
+    "representations_locked": true,
+    "models_locked": true,
+    "seeds_locked": true,
+    "doses_locked": true,
+    "folds_locked": true,
+    "cuda_epochs_locked": true,
+    "material_threshold_unchanged": true,
+    "identity_is_not_safety_success": true,
+    "event_variation_required": true
+  },
+  "failed_checks": [],
+  "authorized_next_action": "obtain the official EULA-authorized AMIGOS archive and place it at E:/AA发表论文的数据/dataset/AMIGOS; do not parse participant values until schema manifest, analysis code, synthetic tests, and implementation lock exist",
+  "claim_boundary": "This reservation authorizes a future one-shot AMIGOS evaluation. It does not assert archive availability, structural eligibility, endpoint variation, applicability, effectiveness, non-harm, safety, or physiological materiality."
+}
