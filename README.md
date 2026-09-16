@@ -17,6 +17,10 @@ The current validated release archive is `dcs_opct_v11_submission_artifacts_cros
 The authoritative archive digest is stored in the adjacent
 `dcs_opct_v11_submission_artifacts_crossfit_v25.zip.sha256` sidecar.
 
+The post-release verification receipt is
+`docs/dcs_opct_v11_public_repository_receipt_v25_20260916.json`. It records the
+publication commit and archive checks without modifying the immutable v25 ZIP.
+
 The v25 archive-level verification covered 547/547 entries with no CRC failure or manifest mismatch. The embedded submission-package validation passed 28/28 checks, the T1–T11 traceability validation passed 16/16 checks with no author-dependent submission blocker, and the EKM-ED confirmatory structural-failure validation passed 19/19 checks.
 
 ## Claim boundary
