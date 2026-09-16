@@ -1,7 +1,7 @@
 {
   "schema_version": "dcs-opct-v11-reproducibility-inventory-1.0",
   "status": "inventory_built_pending_independent_validation",
-  "generated_at_utc": "2026-09-16T12:53:41.320661+00:00",
+  "generated_at_utc": "2026-09-16T13:17:45.833401+00:00",
   "method": "Distribution-Covered Stratified Order-Preserving Calibration Transport (DCS-OPCT v11)",
   "scope": "Immutable evidence graph for software readiness, frozen development evidence, submission artifacts, and compiled manuscript files.",
   "claim_boundary": "Inventory integrity establishes traceability and reproducibility of recorded artifacts only. It is not prospective external effectiveness, non-harm, or universal safety evidence.",
@@ -41,8 +41,8 @@
       "groups": [
         "public_repository_finalization"
       ],
-      "bytes": 2470,
-      "sha256": "87331c3c75f390453dba097513e503e6b335037be27b2ed99f348d4db68628d9"
+      "bytes": 2659,
+      "sha256": "9441ee4eb2a472c4637dd2cd8db901cd18236dd073453ac12bb613420c932c90"
     },
     {
       "path": "docs/dcs_opct_v11_public_repository_receipt_20260916.json",
@@ -73,40 +73,40 @@
       "groups": [
         "manuscript"
       ],
-      "bytes": 585199,
-      "sha256": "30c0a7b24c934f979619f80478253a80d18e5b411f2b35a9fae490264a06bbbb"
+      "bytes": 585151,
+      "sha256": "45feac41979682a2754e20eb5c9d17bf86f2fbffa29616ecd4d0d50c3c3820c7"
     },
     {
       "path": "docs/elsarticle/build/dcs_opct_v11_bspc_supplementary.pdf",
       "groups": [
         "manuscript"
       ],
-      "bytes": 742748,
-      "sha256": "1a8a79171903d5a7941444bc07970473043e870f82328b7ae7f43c91e5a87373"
+      "bytes": 742747,
+      "sha256": "3d0a090a9724b53ae465f0f03f744a30798b9219391ef10d5276ac82e87e5913"
     },
     {
       "path": "docs/elsarticle/dcs_opct_v11_author_confirmation_checklist.md",
       "groups": [
         "public_repository_finalization"
       ],
-      "bytes": 2727,
-      "sha256": "9d64f1286a2f7db60ff1a1b1cbad8d02bec9d4450d4698a728d09b4925d9faac"
+      "bytes": 2787,
+      "sha256": "3ffa5f2955a76b532665ea805fa03da474d34c098b8b91a5bbb51996b58834d5"
     },
     {
       "path": "docs/elsarticle/dcs_opct_v11_bspc_manuscript.tex",
       "groups": [
         "manuscript"
       ],
-      "bytes": 91753,
-      "sha256": "a6641f95881ced5e760d105c7899467c4ab0ab63d9f1d7b92d99eb08385cf7c8"
+      "bytes": 91742,
+      "sha256": "a4531b1efa0c32f6266d8ef6c5204738f851351b60cf2ba8bb5ec617e76b8e28"
     },
     {
       "path": "docs/elsarticle/dcs_opct_v11_bspc_supplementary.tex",
       "groups": [
         "manuscript"
       ],
-      "bytes": 71690,
-      "sha256": "d2e35b539a0dc55f93c506120c16ce025fc878f4991330a2b1f22bad0a28837f"
+      "bytes": 71742,
+      "sha256": "03c36f7f452311f83d2c18c46657ebbef1179bc5c81ff74f4db22adf3b5ec400"
     },
     {
       "path": "docs/elsarticle/figures/fig_v11_independence_ladder.pdf",
@@ -1826,7 +1826,7 @@
         "reproducibility_driver"
       ],
       "bytes": 17478,
-      "sha256": "8e2ebe24a33c10486e9531426c8079c5bba4364baade00129632a541ab78a1ac"
+      "sha256": "bfb4293775dccec4e40457000d51d57a5f2e614444272b3dcdfeb358f3f4c939"
     },
     {
       "path": "scripts/build_dcs_opct_v11_reviewer_task_traceability.py",
@@ -1909,12 +1909,12 @@
       "sha256": "be7d532d2286e3a8629ea6c8ae15eb8fe044e1c9eeb9386d287b1e529c9544e9"
     },
     {
-      "path": "scripts/make_dcs_opct_v23_submission_artifacts.py",
+      "path": "scripts/make_dcs_opct_v25_submission_artifacts.py",
       "groups": [
         "public_repository_finalization"
       ],
       "bytes": 8614,
-      "sha256": "463d47d057384f787a510eed5ce48d8252fdd398ecdbb2456140ecce84e07f90"
+      "sha256": "fbbd8567715935eb205cd23fbfe4fb135de97e7514a28d645e1d075eaac6bbc8"
     },
     {
       "path": "scripts/run_emognition_v11_external_confirmation.py",
@@ -2090,7 +2090,7 @@
         "reproducibility_driver"
       ],
       "bytes": 22408,
-      "sha256": "7d76f7101b470e05aa2987d4d252954683192b79b436210321da1c53c0bb7528"
+      "sha256": "4db247bb8028e9fc93915fb96b58c6381f45b11a5702bcc5266330f76d6b6fe8"
     },
     {
       "path": "scripts/validate_dcs_opct_v11_reviewer_closure.py",
@@ -2117,12 +2117,12 @@
       "sha256": "cfdec7caf7b6f838c9fd0fe8b13c0458269e33538d2d6d8cebfbbd3e33bf1bde"
     },
     {
-      "path": "scripts/validate_dcs_opct_v23_submission_artifacts.py",
+      "path": "scripts/validate_dcs_opct_v25_submission_artifacts.py",
       "groups": [
         "public_repository_finalization"
       ],
       "bytes": 12038,
-      "sha256": "5cd72cf8c517139f23acde416fabf5303565d78bd53ef8353c9477cf1a337d42"
+      "sha256": "bacfdbc920bab4ec78fd164a7c377d68cb17a801391a4a83b045cb286b15aec9"
     },
     {
       "path": "src/identity_shortcut/domain_transport.py",

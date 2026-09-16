@@ -1,14 +1,14 @@
 {
   "status": "passed",
-  "generated_at_utc": "2026-09-16T12:54:01.775007+00:00",
-  "manifest_sha256": "cd920a6e49ffb9239838ce9966ec7d6c00ccb387db95b66d814121fd220c0229",
+  "generated_at_utc": "2026-09-16T13:17:50.356237+00:00",
+  "manifest_sha256": "26bff7d9fae50d2bcfdee3fdd83930dbefdfa73cd4fc0e4fd86506cf00f6deb0",
   "checks_passed": 28,
   "checks_total": 28,
   "checks": [
     {
       "name": "schema_version",
       "passed": true,
-      "detail": "dcs-opct-v11-bspc-submission-package-v23"
+      "detail": "dcs-opct-v11-bspc-submission-package-v25"
     },
     {
       "name": "freeze_hash",
@@ -23,7 +23,7 @@
     {
       "name": "declared_file_count",
       "passed": true,
-      "detail": 541
+      "detail": 545
     },
     {
       "name": "all_source_hashes_current",
@@ -33,12 +33,12 @@
     {
       "name": "main_pdf_valid_and_fresh",
       "passed": true,
-      "detail": 1789563101.0
+      "detail": 1789564220.0
     },
     {
       "name": "supp_pdf_valid_and_fresh",
       "passed": true,
-      "detail": 1789562838.0
+      "detail": 1789564225.0
     },
     {
       "name": "latex_logs_clean",

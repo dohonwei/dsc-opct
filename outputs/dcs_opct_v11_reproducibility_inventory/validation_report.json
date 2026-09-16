@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "generated_at_utc": "2026-09-16T12:53:41.746728+00:00",
+  "generated_at_utc": "2026-09-16T13:17:46.228663+00:00",
   "claim_boundary": "Inventory integrity establishes traceability and reproducibility of recorded artifacts only. It is not prospective external effectiveness, non-harm, or universal safety evidence.",
-  "inventory_sha256": "796e0504941dfe1c762979123d61f246894438f15c244a6ace21570f9383fc7f",
+  "inventory_sha256": "c2c648d1899df201148cab42e95a1122e2adbcb6927a0aa43091878296cb45dd",
   "checks_passed": 23,
   "checks_total": 23,
   "checks": [

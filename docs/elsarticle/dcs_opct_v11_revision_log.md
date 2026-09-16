@@ -1,5 +1,16 @@
 # DCS-OPCT v11 manuscript revision log
 
+## 2026-09-16: final reproducibility-count synchronization
+
+- Replaced stale manuscript and supplementary inventory counts (214 and 252)
+  with the independently validated current count of 264 files.
+- Updated the supplementary EKM-ED sentence to state that the locked
+  structural-failure artifacts are already included in the current inventory
+  and submission package rather than awaiting a future package.
+- Reserved a non-overwriting final v25 package for the synchronized manuscript,
+  compiled PDFs, inventory, and public-repository state. The local v24 build is
+  retained only as an unpublished intermediate snapshot.
+
 ## 2026-09-16: public repository deposition and v23 finalization
 
 - Published the validated v22 reproducibility package, browseable source code,

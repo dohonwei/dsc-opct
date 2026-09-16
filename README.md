@@ -12,15 +12,12 @@ DCS-OPCT calibrates a configuration-level audit-risk probability. It does not al
 
 ## Validated submission archive
 
-The current validated release archive is `dcs_opct_v11_submission_artifacts_crossfit_v23.zip`. The v22 archive remains available as an immutable publication-deposition predecessor.
+The current validated release archive is `dcs_opct_v11_submission_artifacts_crossfit_v25.zip`. Earlier archives remain available as immutable predecessors.
 
-SHA-256:
+The authoritative archive digest is stored in the adjacent
+`dcs_opct_v11_submission_artifacts_crossfit_v25.zip.sha256` sidecar.
 
-```text
-6BFC1056063B446A7FB0FA89A9506F5F66368EC6EF8FFE4835673B5BCC13DB30
-```
-
-The v23 archive-level verification covered 543/543 entries with no CRC failure or manifest mismatch. The embedded submission-package validation passed 28/28 checks, the T1–T11 traceability validation passed 16/16 checks with no author-dependent submission blocker, and the EKM-ED confirmatory structural-failure validation passed 19/19 checks.
+The v25 archive-level verification covered 547/547 entries with no CRC failure or manifest mismatch. The embedded submission-package validation passed 28/28 checks, the T1–T11 traceability validation passed 16/16 checks with no author-dependent submission blocker, and the EKM-ED confirmatory structural-failure validation passed 19/19 checks.
 
 ## Claim boundary
 

@@ -25,12 +25,13 @@ future-domain non-harm.
 
 ## Public release verification
 
-The publication receipt is stored in
-`docs/dcs_opct_v11_public_repository_receipt_20260916.json`. The immutable v22
-archive has SHA-256
-`442BFB517EA8DD88E0693080780946EF9A321AFC66CE8F756DE4243A6E19AC66`.
-Its archive-level verification covered 538/538 entries with no CRC failure or
-manifest mismatch.
+The original publication receipt is stored in
+`docs/dcs_opct_v11_public_repository_receipt_20260916.json`. The current
+validated archive is `dcs_opct_v11_submission_artifacts_crossfit_v25.zip`, and
+its authoritative digest is stored in the adjacent `.zip.sha256` sidecar.
+Archive-level verification covered 547/547 entries with no CRC failure or
+manifest mismatch, while the embedded package validator passed 28/28 checks.
+The v22 and v23 archives remain immutable provenance predecessors.
 
 ## Primary validation commands
 
@@ -42,7 +43,7 @@ Run from the repository root with Python 3.11:
 & 'D:\conda_envs\py311\python.exe' scripts\validate_dcs_opct_v11_reproducibility_inventory.py
 & 'D:\conda_envs\py311\python.exe' scripts\validate_dcs_opct_v11_reviewer_task_traceability.py
 & 'D:\conda_envs\py311\python.exe' scripts\validate_ekmed_v11_confirmatory_failure.py
-& 'D:\conda_envs\py311\python.exe' scripts\validate_dcs_opct_v23_submission_artifacts.py
+& 'D:\conda_envs\py311\python.exe' scripts\validate_dcs_opct_v25_submission_artifacts.py
 ```
 
 GPU experiment branches require a CUDA-capable PyTorch runtime. Long-running
