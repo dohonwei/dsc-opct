@@ -6,6 +6,8 @@ Reproducibility materials for the manuscript **From Identity Exposure to Selecti
 
 This repository contains source code, frozen protocols, aggregate evidence, validation reports, manuscript sources, figures, and tables for DCS-OPCT. It does not redistribute restricted EEG source datasets or reversible participant-level records.
 
+This GitHub repository is a public, author-identifiable reproducibility mirror; it is not an anonymized review repository.
+
 DCS-OPCT calibrates a configuration-level audit-risk probability. It does not alter trial-level EEG emotion predictions or retrain the underlying emotion classifier.
 
 ## Validated submission archive
@@ -31,4 +33,4 @@ The evidence supports retrospective selective configuration-level audit-risk cal
 - Dependencies in `requirements.txt` and `requirements-experiment-lock.txt`
 - LaTeX with `latexmk`, `pdflatex`, and BibTeX for manuscript compilation
 
-See `repository/docs/dcs_opct_v11_anonymous_repository_readme.md` after the validated archive contents are uploaded for the full validation commands and data-governance boundaries.
+See `docs/dcs_opct_v11_anonymous_repository_readme.md` for the full validation commands and data-governance boundaries. The filename is retained to match the immutable v22 archive manifest; its "anonymous" label describes the prepared review package rather than this public GitHub mirror.
