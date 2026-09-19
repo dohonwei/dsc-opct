@@ -1,3 +1,0 @@
-component,fit_population,application_population,scale,shift,final_loss,probability_mean_shift,probability_rank,decision_flip_rate,order_inversions,applicable,consensus_probability_mean_shift,consensus_probability_rank,consensus_decision_flip_rate,consensus_order_inversions,consensus_applicable
-coral,audit_population,evaluation_population,0.4722338318824768,-1.234270691871643,0.0018688882701098919,-0.21215984832110535,1.0,0.30625,0,False,-0.21215984832110535,1.0,0.30625,0,False
-quantile_mapping,audit_population,evaluation_population,0.48122233152389526,-1.18086838722229,0.004093778785318136,-0.20297940277349932,1.0,0.296875,0,False,-0.20297940277349932,1.0,0.296875,0,False

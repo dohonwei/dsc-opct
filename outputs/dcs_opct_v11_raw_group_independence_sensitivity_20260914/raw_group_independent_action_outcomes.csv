@@ -1,6 +1,0 @@
-dataset,components_pass,witness_pass,certificate_pass,selected_method,audit_event_prevalence,evaluation_event_prevalence,audit_brier_gain,audit_brier_gain_lcb,heldout_brier_gain,heldout_auc_delta,material_negative_transfer,transductive_original_endpoint_gain
-CASE,True,True,False,identity,0.3625,0.30625,0.007639055971836907,-0.009119618562376404,0.0,0.0,False,0.0484753794472238
-CEAP,True,False,False,identity,0.3625,0.48125,,,0.0,0.0,False,0.0084563129293282
-DREAMER,True,False,False,identity,0.43333333333333335,0.23333333333333334,,,0.0,0.0,False,0.0
-EPPVR,True,True,True,wg_opct,0.15625,0.3,0.03462935554859435,0.02540704528097922,0.013485508515980127,0.0,False,0.0263085709477713
-SEED-IV,False,False,False,identity,0.10833333333333334,0.15,,,0.0,0.0,False,0.0

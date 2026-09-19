@@ -1,6 +1,0 @@
-dataset,method,primary_component,witness_component,both_components_pass,directional_agreement,displacement_cosine,normalized_disagreement,witness_pass,applicable,selection_reason,probability_mean_shift,probability_rank,decision_flip_rate,order_inversions
-EPPVR,wg_opct,coral,quantile_mapping,True,0.9375,0.9971329131405046,0.20886811609553396,True,True,covariance_action_with_quantile_witness_locked,-0.05524590423973859,1.0,0.153125,0
-SEED-IV,wg_opct,coral,quantile_mapping,False,,,,False,False,abstain_component_or_witness_ineligible,0.0,0.9999999999999998,0.0,0
-DREAMER,wg_opct,coral,quantile_mapping,True,0.8375,0.9765071464486136,0.37127154091769726,False,False,abstain_component_or_witness_ineligible,0.0,1.0,0.0,0
-CASE,wg_opct,coral,quantile_mapping,True,0.99375,0.9999515040911535,0.08034052515770555,True,True,covariance_action_with_quantile_witness_locked,-0.06031563555707044,1.0,0.134375,0
-CEAP,wg_opct,coral,quantile_mapping,True,0.925,0.946729643215063,0.20834996324608718,True,True,covariance_action_with_quantile_witness_locked,0.03673896705766695,1.0,0.040625,0

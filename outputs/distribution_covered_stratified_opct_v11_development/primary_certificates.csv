@@ -1,6 +1,0 @@
-dataset,rule,selected_method,selection_reason,brier_gain,brier_gain_lcb,auc_delta,auc_delta_lcb,tail_alpha,bootstrap_repetitions,brier_certified,auc_noninferior,certified,failure_reason
-EPPVR,dcs_opct_v11_distribution_covered_stratified,wg_opct,selected_distribution_covered_stratified_certificate,0.02217400176773097,0.009552772762147046,0.0,0.0,0.025,5000.0,True,True,True,certified
-SEED-IV,dcs_opct_v11_distribution_covered_stratified,identity,abstain:unlabeled_action_inapplicable,,,0.0,0.0,,,False,False,False,unlabeled_action_inapplicable
-DREAMER,dcs_opct_v11_distribution_covered_stratified,identity,abstain:unlabeled_action_inapplicable,,,0.0,0.0,,,False,False,False,unlabeled_action_inapplicable
-CASE,dcs_opct_v11_distribution_covered_stratified,wg_opct,selected_distribution_covered_stratified_certificate,0.025277486801311932,0.011205472927509579,0.0,0.0,0.025,5000.0,True,True,True,certified
-CEAP,dcs_opct_v11_distribution_covered_stratified,wg_opct,selected_distribution_covered_stratified_certificate,0.010168865487457962,0.0019362759523317802,0.0,0.0,0.025,5000.0,True,True,True,certified

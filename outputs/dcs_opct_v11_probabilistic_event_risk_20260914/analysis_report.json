@@ -1,7 +1,0 @@
-{
-  "status": "completed",
-  "generated_at_utc": "2026-09-14T13:29:37.175778+00:00",
-  "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
-  "soft_label": "crossed-bootstrap probability that dose-induced BAcc amplification is at least 0.02",
-  "claim_boundary": "Post-hoc measurement-error sensitivity; it does not replace the frozen binary endpoint or create an externally validated operating threshold."
-}

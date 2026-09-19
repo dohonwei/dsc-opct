@@ -1,6 +1,0 @@
-dataset,protocol,identity_reconstruction_max_abs_error,audit_configurations,heldout_configurations,component_gate_pass,witness_gate_pass,certificate_pass,selected_method,audit_brier_gain,audit_brier_gain_lcb,heldout_brier_gain,heldout_auc_delta,material_negative_transfer
-CASE,audit_covariate_fit_heldout_covariate_unseen,2.1071841493913723e-08,160,160,True,True,True,wg_opct,0.03527436042423883,0.021155594414394335,0.040613445626586815,0.0,False
-CEAP,audit_covariate_fit_heldout_covariate_unseen,1.8770489385033784e-08,160,160,True,False,False,identity,,,0.0,0.0,False
-DREAMER,audit_covariate_fit_heldout_covariate_unseen,6.892500570288007e-09,120,120,True,False,False,identity,,,0.0,0.0,False
-EPPVR,audit_covariate_fit_heldout_covariate_unseen,1.6915200296008237e-08,160,160,True,True,True,wg_opct,0.02739503349890319,0.01518484064925171,0.02263370037335218,0.0,False
-SEED-IV,audit_covariate_fit_heldout_covariate_unseen,1.4208352550060255e-09,120,120,False,False,False,identity,,,0.0,0.0,False
